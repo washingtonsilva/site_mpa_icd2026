@@ -1,0 +1,30 @@
+---
+lang: pt-BR
+title: "Introdução à Ciência de Dados - 2026/1"
+subtitle: "Mestrado Profissional em Administração <br> IFMG Campus Formiga"
+---
+
+## Bem-vindo à disciplina
+
+Esta disciplina objetiva equipar os mestrandos com conhecimentos fundacionais e 
+ferramentas modernas para conduzirem projetos de pesquisa empírica 
+reproduzíveis na área de Finanças.
+
+
+## Informações Gerais
+
+- **Professor:** [Prof. Dr. Washington Santos da Silva](https://washingtonsilva.github.io){target="_blank"}
+- **E-mail:** washington.silva@ifmg.edu.br
+- **Horário de aula:** Quinta-Feira, 18:30-22:30
+- **Local:** Laboratório de Informática **2** - Bloco B - 2$^{o}$ andar.
+
+
+## Conteúdo
+
+O programa da disciplina está disponível na página 
+[Programa da Disciplina](programa.qmd), nela você encontrará informações 
+detalhadas sobre objetivos, ementa, bibliografia, avaliações, entre outras.
+
+O conteúdo da disciplina está organizado na página
+[Cronograma](cronograma.qmd), onde você encontrará os materiais 
+necessários para acompanhar as aulas, incluindo slides, entre outros.

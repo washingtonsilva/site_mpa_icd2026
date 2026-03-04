@@ -1,0 +1,317 @@
+[
+  {
+    "objectID": "programa.html",
+    "href": "programa.html",
+    "title": "Programa da Disciplina",
+    "section": "",
+    "text": "Trata-se de um curso do tipo hands-on. O objetivo primário é equipar os mestrandos com conhecimentos fundacionais e ferramentas modernas para conduzirem projetos de pesquisa empírica reprodutíveis na área de Finanças, desenvolvendo capacidade crítica para implementar modelos empíricos robustos, interpretar resultados e comunicar análises computacionais no contexto de Finanças e de áreas correlacionadas.\nOs fundamentos envolvem computação científica reprodutível, fundamentos de teoria da probabilidade e inferência estatística.\nUm foco importante é demonstrar aos mestrandos que as competências e habilidades desenvolvidas representam não apenas requisitos para pesquisas acadêmicas alinhadas às boas práticas contemporâneas, mas constituem um conjunto de ferramentas diferenciadas para o desenvolvimento de soluções baseadas em dados para desafios reais do mercado de trabalho atual em Finanças e em outras áreas. Para isso, utiliza-se a metodologia CRISP-DM como estrutura orientadora para condução de análises de dados.",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#objetivo-geral",
+    "href": "programa.html#objetivo-geral",
+    "title": "Programa da Disciplina",
+    "section": "",
+    "text": "Trata-se de um curso do tipo hands-on. O objetivo primário é equipar os mestrandos com conhecimentos fundacionais e ferramentas modernas para conduzirem projetos de pesquisa empírica reprodutíveis na área de Finanças, desenvolvendo capacidade crítica para implementar modelos empíricos robustos, interpretar resultados e comunicar análises computacionais no contexto de Finanças e de áreas correlacionadas.\nOs fundamentos envolvem computação científica reprodutível, fundamentos de teoria da probabilidade e inferência estatística.\nUm foco importante é demonstrar aos mestrandos que as competências e habilidades desenvolvidas representam não apenas requisitos para pesquisas acadêmicas alinhadas às boas práticas contemporâneas, mas constituem um conjunto de ferramentas diferenciadas para o desenvolvimento de soluções baseadas em dados para desafios reais do mercado de trabalho atual em Finanças e em outras áreas. Para isso, utiliza-se a metodologia CRISP-DM como estrutura orientadora para condução de análises de dados.",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#objetivos-especificos",
+    "href": "programa.html#objetivos-especificos",
+    "title": "Programa da Disciplina",
+    "section": "Objetivos Especificos",
+    "text": "Objetivos Especificos\n\nCapacitar o mestrando em ferramentas e técnicas modernas de computação científica, incluindo: Ambiente de Desenvolvimento Integrado RStudio, Sistema de Publicação Quarto, linguagem R, controle de versão com Git e GitHub, e boas práticas de organização, documentação e compartilhamento de dados e códigos para garantir transparência e reprodutibilidade metodológica, tendo como diretriz a metodologia CRISP-DM para estruturação do processo analítico.\nRevisar, de forma aplicada, fundamentos de Probabilidade e Estatística necessários para o desenvolvimento, aplicação e interpretação crítica de modelos empíricos na área de Finanças, incluindo o uso de métodos de simulação para validação de resultados e avaliação de incertezas em contextos financeiros.\nCapacitar o mestrando para a comunicação efetiva de análises e resultados através da elaboração de relatórios, visualizações e apresentações utilizando o Sistema Quarto e LaTeX, com ênfase na documentação completa e transparente do processo de pesquisa que permita a verificação e reprodução dos resultados por terceiros.",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#avaliação",
+    "href": "programa.html#avaliação",
+    "title": "Programa da Disciplina",
+    "section": "Avaliação",
+    "text": "Avaliação\nO planejamento da disciplina prevê que os pontos referentes às avaliações serão distribuídos da seguinte forma:\n\nAvaliação 1 = 33 pontos\nAvaliação 2 = 33 pontos\nAvaliação 4 = 34 pontos\n\nPara aprovação, é necessária a obtenção de pelo menos 60 pontos. Como em todo planejamento, pode haver alterações conforme o andamento da disciplina e o rendimento da turma.",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#bibliografia-básica",
+    "href": "programa.html#bibliografia-básica",
+    "title": "Programa da Disciplina",
+    "section": "Bibliografia Básica",
+    "text": "Bibliografia Básica\nWICKHAM, Hadley; ÇETINKAYA-RUNDEL, Mine; GROLEMUND, Garrett. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. 2nd. ed. 2023. O’Reilly Media, Inc. Disponível em: R for Data Science. Tradução em Português disponível em: R para Ciência de Dados\nDEVORE, J. L. Probabilidade e Estatística para Engenharia e Ciências. São Paulo: Thomson, 2006. Disponível na biblioteca do campus.\nSMAY, Chester; KIM, Albert Y. Introduction to Data Science: Data Wrangling and Visualization with R. 2nd Edition. CRC Press, 2025. Disponível em: Introduction to Data Science\nISMAY, Chester; KIM, Albert Y.; VALDIVIA, Arturo. Statistical Inference via Data Science: A ModernDive into R and the Tidyverse. 2024. 2nd. Ed. CRC Press. Disponível em: ModernDive\nCHANG, Winston. R Graphics Cookbook. 2025, O’Reilly. Disponível em: R Graphics Cookbook",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#bibliografia-complementar",
+    "href": "programa.html#bibliografia-complementar",
+    "title": "Programa da Disciplina",
+    "section": "Bibliografia Complementar",
+    "text": "Bibliografia Complementar\nBLITZSTEIN, Joseph K.; HWANG, Jessica. Introduction to Probability. 2ª ed. CRC Press, 2019. Material de curso disponível em: projects.iq.harvard.edu/stat110\nTRIOLA, Mário F. Introdução à Estatística. 10 edição. Rio de Janeiro: LTC, 2008. Disponível na biblioteca do campus.\nTIMBERS, TIFFANY; CAMPBELL, Trevor; LEE, Melissa. Data Science: A First Introduction. CRC Press, 2024. Disponível em: Data Science: A First Introduction\nALEXANDER, Rohan. Telling Stories with Data: With Applications in R and Python. 2023. CRC Press. Disponível em: Telling Stories with Data\nBRYAN, Jennifer. Happy Git and GitHub for the useR. Disponível em: happygitwithr.com\nFARIA, Pedro Duarte. Introdução à Linguagem R: Seus Fundamentos e sua Prática. 2024. Disponível em: Introdução à Linguagem R",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#recursos-online",
+    "href": "programa.html#recursos-online",
+    "title": "Programa da Disciplina",
+    "section": "Recursos Online",
+    "text": "Recursos Online\n\nManual do Sistema Quarto\nLearn LaTeX in 30 minutes\nCreating a document in Overleaf\nHarvard Data Science Review",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#ementa",
+    "href": "programa.html#ementa",
+    "title": "Programa da Disciplina",
+    "section": "Ementa",
+    "text": "Ementa\nIntrodução à Computação Científica Reproduzível: IDE Rstudio, Sistema Quarto, Linguagem R e Git/GitHub. Fundamentos de Probabilidade e Simulação. Fundamentos de Estatística e Simulação.",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#conteúdo-planejado",
+    "href": "programa.html#conteúdo-planejado",
+    "title": "Programa da Disciplina",
+    "section": "Conteúdo Planejado",
+    "text": "Conteúdo Planejado\nTrata-se apenas de um planejamento e pode ser alterado conforme o andamento da disciplina e rendimento da turma.\n\n1. Introdução à Computação Científica Reprodutível\n\n1.1. Conceitos Fundamentais de Ciência de Dados\n\n1.1.1. O que é Ciência de Dados?\n1.1.2. O ciclo de vida de um projeto de ciência de dados\n1.1.3. Ciência de Dados aplicada à Finanças: casos de uso nas linhas de pesquisa do mestrado\n\n1.2. Computação Científica Reproduzível\n\n1.2.1. Princípios da pesquisa reproduzível\n1.2.2. RStudio e projetos estruturados\n1.2.3. Interface e configuração do RStudio\n1.2.4. Projetos RStudio: criação, organização e boas práticas\n\n1.3. Sistema de Publicação Quarto\n\n1.3.1. Fundamentos do Quarto: markdown, código e texto integrados\n1.3.2. Formatos de saída para comunicação científica (HTML, PDF, apresentações)\n1.3.3. Elementos do Quarto: cabeçalhos, parâmetros, chunks de código\n1.3.4. Introdução ao LaTeX para equações e formatação\n\n1.4. Introdução à Linguagem R\n\n1.4.1. Sintaxe básica, operadores e tipos de dados\n1.4.2. Estruturas de dados fundamentais\n1.4.3. Importação e exportação de dados\n1.4.4. Manipulação de dados com tidyverse (dplyr, tidyr)\n1.4.5. Introdução à criação de funções\n\n1.5. Controle de Versão com Git e GitHub\n\n1.5.1. Conceitos fundamentais e fluxo de trabalho básico\n1.5.2. Criando e mantendo um repositório para o projeto da disciplina\n1.5.3. Colaboração e integração com RStudio\n\n\n\n\n2. Fundamentos de Probabilidade e Simulação\n\n2.1. Conceitos Básicos de Probabilidade\n\n2.1.1. Experimentos aleatórios, espaço amostral e eventos\n2.1.2. Axiomas da probabilidade\n2.1.3. Probabilidade Condicional e Independência\n2.1.4. Conceito de variável aleatória\n2.1.5. Distribuições discretas de probabilidade\n2.1.6. Distribuições contínuas de probabilidade\n2.1.7. Implementação de distribuições de probabilidade em R\n2.1.8. Lei dos Grandes Números e Teorema Central do Limite\n2.1.9. Características de Distribuições de Probabilidade\n\n2.1.9.1. Valor Esperado, Variância e Desvio-Padrão\n2.1.9.2. Assimetria e Curtose\n\n2.1.10. Distribução Conjunta, Marginal e Condicional\n\n2.1.10.1. Covariância e Correlação\n\n\n2.2. Simulação de Monte Carlo\n\n2.2.1. Princípios básicos de simulação\n2.2.2. Geração de números aleatórios em R\n2.2.4. Aplicações em finanças\n\n2.2.4.1. Análise de Viabilidade sob Incerteza\n2.2.4.2. Gestão de Risco e Fluxo de Caixa\n2.2.4.3. Medidas de Risco: VaR e ES (CVaR)\n\n\n\n\n\n3. Fundamentos de Inferência Estatística\n\n3.1. Análise Exploratória de Dados\n\n3.1.1. Medidas de tendência central/posição e dispersão\n3.1.2. Análise exploratória numérica e gráfica\n\n3.2. Fundamentos de Inferência Estatística\n\n3.2.1. Amostragem Aleatória\n3.2.2. Estimação pontual e intervalar\n3.2.3. Interpretação de intervalos de confiança\n3.2.4. Simulação para compreensão da inferência estatística\n\n3.3. Testes de Hipóteses\n\n3.3.1. Conceitos Principais\n3.3.2. Testes paramétricos principais\n3.3.3. Interpretação de resultados e significância prática vs. estatística\n3.3.4. Simulação e Inferência Estatística",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#recursos-didáticos-e-materiais-de-estudo",
+    "href": "programa.html#recursos-didáticos-e-materiais-de-estudo",
+    "title": "Programa da Disciplina",
+    "section": "Recursos Didáticos e Materiais de Estudo",
+    "text": "Recursos Didáticos e Materiais de Estudo\nEntre os recursos didáticos utilizados na disciplina estão:\n\nMateriais Primários para Estudo:\n\nBibliografia recomendada.\nSlides e notas de aula (disponibilizados no site da disciplina).\nTutoriais desenvolvidos em Quarto.\nArquivos quarto (reports) demonstrativos (.qmd).\n\nAmbiente e Ferramentas:\n\nRepositório GitHub da disciplina para compartilhamento de materiais e submissão de atividades.\nAmbiente virtual de aprendizagem para suporte e comunicação.\nArquivos de dados reais e simulados para os exemplos.\n\n\nImportante: Os slides, tutoriais e demais recursos disponibilizados constituem os materiais primários para estudo e preparação para as avaliações, devendo ser utilizados em conjunto com a bibliografia recomendada. Todo o material será disponibilizado no site da disciplinar e/ou no ambiente virtual de aprendizagem.",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#metodologia-de-ensino",
+    "href": "programa.html#metodologia-de-ensino",
+    "title": "Programa da Disciplina",
+    "section": "Metodologia de Ensino",
+    "text": "Metodologia de Ensino\nA disciplina será conduzida de forma teórico-aplicada, com ênfase em implementação computacional e interpretação substantiva.\n\nParte das aulas serão expositivas: apresentação de ferramentas computacionais, conceitos e modelos.\nParte das aulas práticas: Em cada aula, parte relevante do tempo será dedicada à elaboração de código R pelos mestrandos.\nSimulações como ferramenta didática.\nAtividades avaliativas.",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "programa.html#plano-de-aula",
+    "href": "programa.html#plano-de-aula",
+    "title": "Programa da Disciplina",
+    "section": "Plano de Aula",
+    "text": "Plano de Aula\nCertamente, o planejamento a seguir está sujeito a alterações, conforme o andamento da disciplina e o rendimento da turma.\n\n\n\n\n\n\n\n\nAula\nData\nTópicos Principais\n\n\n\n\n1\n5/3/25\nApresentação da Disicplina. Introdução à Computação Científica\n\n\n2\n12/3/26\nIntrodução à Computação Científica\n\n\n3\n19/3/26\nIntrodução à Computação Científica\n\n\n4\n26/3/26\nIntrodução à Computação Científica\n\n\n5\n9/4/26\nIntrodução à Computação Científica\n\n\n6\n16/4/26\nAvaliação 1\n\n\n7\n23/4/26\nProbabilidade e Simulação\n\n\n8\n30/3/26\nProbabilidade e Simulação\n\n\n9\n7/5/26\nProbabilidade e Simulação\n\n\n10\n14/5/26\nAvaliação 2\n\n\n11\n21/5/26\nInferência Estatística\n\n\n12\n28/5/26\nInferência Estatística\n\n\n13\n11/6/26\nInferência Estatística\n\n\n14\n18/6/26\nInferência Estatística\n\n\n15\n25/6/26\nAvaliação 3 / Encerramento",
+    "crumbs": [
+      "Início",
+      "Programa da Disciplina"
+    ]
+  },
+  {
+    "objectID": "cronograma.html",
+    "href": "cronograma.html",
+    "title": "Cronograma",
+    "section": "",
+    "text": "Nesta página, você encontrará o cronograma completo da disciplina, com links para os materiais de cada aula, incluindo slides, dados, referências para leitura, entre outros.\n\n\n\n\n\n\nDicaComo navegar pelos slides\n\n\n\nOs slides desta disciplina são interativos e foram produzidos no formato revealjs.\nAo abrir um arquivo de slides, utilize:\n\nSetas do teclado (← →) para avançar e voltar\n\nTecla F para entrar no modo de tela cheia\n\nTecla O para visualizar todos os slides em formato de grade\n\nTecla Esc para sair do modo de visão geral\n\nEm dispositivos móveis, utilize o gesto de deslizar para os lados\n\nOs slides são disponibilizados em HTML autocontido e abrem em nova aba do seu navegador padrão.\n\n\n\nAula 1 (05/03)\nOs materiais (slides, etc.) da primeira aula estarão disponíveis neste seção.",
+    "crumbs": [
+      "Início",
+      "Cronograma"
+    ]
+  },
+  {
+    "objectID": "ambiente.html",
+    "href": "ambiente.html",
+    "title": "Ambiente Computacional",
+    "section": "",
+    "text": "Esta página contém instruções para instalação e configuração dos softwares necessários para acompanhar a disciplina Introdução à Ciência de Dados.\n\n\n\n\n\n\nDicaImportante\n\n\n\n\nTente instalar e configurar todos os softwares antes da primeira aula.\nUtilizaremos o RStudio como ambiente de desenvolvimento integrado para a linguagem R devido à sua simplicidade, mas é possível utilizar outros IDEs como Visual Studio Code, Positron, entre outros, caso prefira.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#visão-geral",
+    "href": "ambiente.html#visão-geral",
+    "title": "Ambiente Computacional",
+    "section": "",
+    "text": "Esta página contém instruções para instalação e configuração dos softwares necessários para acompanhar a disciplina Introdução à Ciência de Dados.\n\n\n\n\n\n\nDicaImportante\n\n\n\n\nTente instalar e configurar todos os softwares antes da primeira aula.\nUtilizaremos o RStudio como ambiente de desenvolvimento integrado para a linguagem R devido à sua simplicidade, mas é possível utilizar outros IDEs como Visual Studio Code, Positron, entre outros, caso prefira.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#softwares-necessários",
+    "href": "ambiente.html#softwares-necessários",
+    "title": "Ambiente Computacional",
+    "section": "Softwares Necessários",
+    "text": "Softwares Necessários\n\nLinguagem R 4.5.2\nIDE RStudio\nSistema Quarto\nTinyTeX\nGit\n\nGit Bash como Terminal do RStudio\n\nConta no GitHub",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#sec-r",
+    "href": "ambiente.html#sec-r",
+    "title": "Ambiente Computacional",
+    "section": "Linguagem R",
+    "text": "Linguagem R\n\n\n\n\n\n\nDicaInstalando a Linguagem R 4.5.2\n\n\n\n\nAcesse https://cloud.r-project.org/\nSelecione o sistema operacional ou, se usar Ms Windows, clique em Download R for Windows por exemplo.\nNa página seguinte clique em base\nClique em Download R-4.5.2 for Windows\nFeito o download basta ir clicando em próximo/next até a instalação ser concluída.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#sec-rstudio",
+    "href": "ambiente.html#sec-rstudio",
+    "title": "Ambiente Computacional",
+    "section": "RStudio",
+    "text": "RStudio\n\n\n\n\n\n\nDicaInstalando o IDE RStudio\n\n\n\n\nAcesse https://posit.co/download/rstudio-desktop/\nEm geral, o site detecta seu sistema operacional e disponibiliza o instalador adequado logo abaixo de 2: Install RStudio.\nClique em Download RStudio Desktop for Windows caso seu sistema operacional seja Windows.\nFinalizado o download, basta clicar no arquivo e, em seguida, clicar em em continuar/avançar/next até o início da instalação.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#sec-quarto",
+    "href": "ambiente.html#sec-quarto",
+    "title": "Ambiente Computacional",
+    "section": "Sistema Quarto",
+    "text": "Sistema Quarto\n\n\n\n\n\n\nDicaInstalando o Sistema de Publicação Quarto\n\n\n\n\nAcesse https://quarto.org/docs/download/\nClique em Download Quarto CLI e, finalizado o download, instale clicando no arquivo.\nFinalizado o download, basta clicar no arquivo e, em seguida, clicar em em continuar/avançar/next até o início da instalação.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#sec-git",
+    "href": "ambiente.html#sec-git",
+    "title": "Ambiente Computacional",
+    "section": "Git",
+    "text": "Git\n\n\n\n\n\n\nDicaInstalando o Git no Windows\n\n\n\n\nAcesse o site oficial do Git: git-scm.com\nClique em Download for Windows, exibido em um terminal.\nApós o download, execute o instalador.\nSiga os passos do instalador, mantenha as configurações padrão sugeridas até o item 5.\nHá uma excecão, quando chegar na janela de título Adjusting the name of the initial branch, marque a opção Override the defaul e escreva main no campo apropriado.\nClique em Next nas próximas janelas e finalize a instalação.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#configurando-o-git",
+    "href": "ambiente.html#configurando-o-git",
+    "title": "Ambiente Computacional",
+    "section": "Configurando o Git",
+    "text": "Configurando o Git\n\n\n\n\n\n\nDicaConfigurar o Usuário\n\n\n\n\nAbra o Git Bash (encontrado no menu Iniciar após a instalação).\nConfigure seu nome de usuário:\n\ngit config --global user.name \"SeuNome\"\n\n\n\n\n\n\n\n\nDicaConfigurar o email\n\n\n\n\nConfigure seu e-mail:\n\ngit config --global user.email \"seuemail@exemplo.com\"\n\n\n\n\n\n\n\n\nDicaVerificando as Configurações\n\n\n\n\nPara verificar suas configurações, use:\n\ngit config --list",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#git-bash-como-terminal-no-rstudio",
+    "href": "ambiente.html#git-bash-como-terminal-no-rstudio",
+    "title": "Ambiente Computacional",
+    "section": "Git Bash como terminal no RStudio",
+    "text": "Git Bash como terminal no RStudio\n\n\n\n\n\n\nDicaRStudio: usando o Git Bash como terminal (Windows)\n\n\n\n\n\nO Git Bash é instalado junto com o Git for Windows. Se não aparecer na lista, reinstale o Git mantendo a opção Git Bash.\n\n\n\nAbra RStudio → Tools → Global Options → Terminal.\n\nEm New terminals open with, selecione Git Bash.\n\nConfirme e reinicie o RStudio.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#sec-github",
+    "href": "ambiente.html#sec-github",
+    "title": "Ambiente Computacional",
+    "section": "GitHub",
+    "text": "GitHub\n\n\n\n\n\n\nDicaCriando uma Conta no GitHub\n\n\n\n\nAcesse github.com\nClique em Sign up para criar uma nova conta.\nPreencha os campos solicitados:\n\nUsername: Escolha um nome de usuário.\nEmail: Insira seu endereço de e-mail.\nPassword: Crie uma senha segura.\n\nVerifique seu e-mail e siga as instruções para confirmar sua conta.",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#tutoriais-e-livros-recomendados",
+    "href": "ambiente.html#tutoriais-e-livros-recomendados",
+    "title": "Ambiente Computacional",
+    "section": "Tutoriais e Livros Recomendados",
+    "text": "Tutoriais e Livros Recomendados\n\nQuarto Get Started\nR for Data Science (Hadley Wickham)\nHappy Git and GitHub for the useR (Jenny Bryan)",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "ambiente.html#documentação-oficial",
+    "href": "ambiente.html#documentação-oficial",
+    "title": "Ambiente Computacional",
+    "section": "Documentação Oficial",
+    "text": "Documentação Oficial\n\nQuarto Documentation\nAn Introduction to R\nRStudio User Guide\nGit Documentation",
+    "crumbs": [
+      "Início",
+      "Ambiente Computacional"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introdução à Ciência de Dados - 2026/1",
+    "section": "",
+    "text": "Esta disciplina objetiva equipar os mestrandos com conhecimentos fundacionais e ferramentas modernas para conduzirem projetos de pesquisa empírica reproduzíveis na área de Finanças.",
+    "crumbs": [
+      "Início"
+    ]
+  },
+  {
+    "objectID": "index.html#bem-vindo-à-disciplina",
+    "href": "index.html#bem-vindo-à-disciplina",
+    "title": "Introdução à Ciência de Dados - 2026/1",
+    "section": "",
+    "text": "Esta disciplina objetiva equipar os mestrandos com conhecimentos fundacionais e ferramentas modernas para conduzirem projetos de pesquisa empírica reproduzíveis na área de Finanças.",
+    "crumbs": [
+      "Início"
+    ]
+  },
+  {
+    "objectID": "index.html#informações-gerais",
+    "href": "index.html#informações-gerais",
+    "title": "Introdução à Ciência de Dados - 2026/1",
+    "section": "Informações Gerais",
+    "text": "Informações Gerais\n\nProfessor: Prof. Dr. Washington Santos da Silva\nE-mail: washington.silva@ifmg.edu.br\nHorário de aula: Quinta-Feira, 18:30-22:30\nLocal: Laboratório de Informática 2 - Bloco B - 2\\(^{o}\\) andar.",
+    "crumbs": [
+      "Início"
+    ]
+  },
+  {
+    "objectID": "index.html#conteúdo",
+    "href": "index.html#conteúdo",
+    "title": "Introdução à Ciência de Dados - 2026/1",
+    "section": "Conteúdo",
+    "text": "Conteúdo\nO programa da disciplina está disponível na página Programa da Disciplina, nela você encontrará informações detalhadas sobre objetivos, ementa, bibliografia, avaliações, entre outras.\nO conteúdo da disciplina está organizado na página Cronograma, onde você encontrará os materiais necessários para acompanhar as aulas, incluindo slides, entre outros.",
+    "crumbs": [
+      "Início"
+    ]
+  }
+]

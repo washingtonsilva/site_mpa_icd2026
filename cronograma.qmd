@@ -1,0 +1,40 @@
+---
+title: "Cronograma"
+lang: pt-BR
+---
+
+Nesta página, você encontrará o cronograma completo da disciplina, com
+links para os materiais de cada aula, incluindo slides, dados, 
+referências para leitura, entre outros.
+
+
+::: {.callout-tip icon="false"}
+## Como navegar pelos slides
+
+Os slides desta disciplina são interativos e foram produzidos no formato 
+**revealjs**.  
+
+Ao abrir um arquivo de slides, utilize:
+
+- **Setas do teclado (← →)** para avançar e voltar  
+- Tecla **`F`** para entrar no modo de tela cheia  
+- Tecla **`O`** para visualizar todos os slides em formato de grade  
+- Tecla **`Esc`** para sair do modo de visão geral  
+- Em dispositivos móveis, utilize o gesto de deslizar para os lados  
+
+Os slides são disponibilizados em **HTML autocontido** e abrem em nova aba do seu 
+navegador padrão.  
+:::
+
+
+
+# Aula 1 (05/03)
+
+Os materiais (slides, etc.) da primeira aula estarão disponíveis neste seção.
+
+
+  
+ 
+
+
+

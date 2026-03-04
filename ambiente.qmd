@@ -1,0 +1,209 @@
+---
+lang: pt-BR
+title: "Ambiente Computacional"
+subtitle: "Instalação e Configuração dos Softwares"
+---
+
+
+
+## Visão Geral
+
+Esta página contém instruções para instalação e configuração dos 
+softwares necessários para acompanhar a disciplina 
+Introdução à Ciência de Dados.
+
+::: {.callout-tip}
+## Importante
+
+- Tente instalar e configurar todos os softwares **antes da primeira aula**.
+
+- Utilizaremos o RStudio como ambiente de desenvolvimento integrado para a 
+linguagem R devido à sua simplicidade, mas é possível 
+utilizar outros IDEs como Visual Studio Code, Positron, entre outros, 
+caso prefira.
+:::
+
+
+
+## Softwares Necessários
+
+- Linguagem R 4.5.2
+
+- IDE RStudio 
+
+- Sistema Quarto 
+
+- TinyTeX 
+
+- Git
+    
+    - Git Bash como Terminal do RStudio
+
+- Conta no GitHub 
+
+
+
+
+## Linguagem R {#sec-r}
+
+::: {.callout-tip icon="false"}
+## Instalando a Linguagem R 4.5.2
+
+1.  Acesse [https://cloud.r-project.org/](https://cloud.r-project.org/){target="_blank"}
+
+2.  Selecione o sistema operacional ou, se usar Ms Windows, clique em **Download R for Windows** por exemplo.
+
+3.  Na página seguinte clique em **base**
+
+4.  Clique em **Download R-4.5.2 for Windows**
+
+5.  Feito o download basta ir clicando em próximo/next até a instalação ser concluída.
+:::
+
+
+
+## RStudio {#sec-rstudio}
+
+::: {.callout-tip icon="false"}
+## Instalando o IDE RStudio
+
+1.  Acesse [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/){target="_blank"}
+
+2.  Em geral, o site detecta seu sistema operacional e disponibiliza o instalador adequado logo abaixo de `2: Install RStudio`.
+
+3.  Clique em `Download RStudio Desktop for Windows` caso seu sistema operacional seja Windows.
+
+4. Finalizado o download, basta clicar no arquivo e, em seguida, clicar em em continuar/avançar/next até o início da instalação.
+:::
+
+
+
+
+## Sistema Quarto {#sec-quarto}
+
+::: {.callout-tip icon="false"}
+## Instalando o Sistema de Publicação Quarto
+
+1.  Acesse [https://quarto.org/docs/download/](https://quarto.org/docs/download/){target="_blank"}
+
+2.  Clique em `Download Quarto CLI` e, finalizado o download, instale clicando no arquivo.
+
+3. Finalizado o download, basta clicar no arquivo e, em seguida, clicar em em continuar/avançar/next até o início da instalação.
+:::
+
+
+
+## Git {#sec-git}
+
+::: {.callout-tip icon="false"}
+## Instalando o Git no Windows
+
+1. Acesse o site oficial do Git: [git-scm.com](https://git-scm.com){target="_blank"}
+
+2. Clique em **Download for Windows**, exibido em um terminal.
+
+3. Após o download, execute o instalador.
+
+4. Siga os passos do instalador, mantenha as configurações padrão sugeridas até o item 5.
+
+5. Há uma excecão, quando chegar na janela de título **Adjusting the name of the initial branch**, marque a opção **Override the defaul** e escreva **main** no campo apropriado.
+
+6. Clique em **Next** nas próximas janelas e finalize a instalação.
+:::
+
+
+
+## Configurando o Git
+
+::: {.callout-tip icon="false"}
+## Configurar o Usuário
+
+1. Abra o **Git Bash** (encontrado no menu Iniciar após a instalação).
+
+2. Configure seu nome de usuário:
+
+```bash
+git config --global user.name "SeuNome"
+```
+:::
+
+
+::: {.callout-tip icon="false"}
+## Configurar o email
+
+3. Configure seu e-mail:
+
+```bash
+git config --global user.email "seuemail@exemplo.com"
+```
+:::
+
+
+::: {.callout-tip icon="false"}
+## Verificando as Configurações
+
+- Para verificar suas configurações, use:
+
+```bash
+git config --list
+```
+:::
+
+
+
+## Git Bash como terminal no RStudio
+
+::: {.callout-tip}
+## RStudio: usando o Git Bash como terminal (Windows)
+
+> - O Git Bash é instalado junto com o Git for Windows. Se não aparecer na lista, reinstale o Git mantendo a opção **Git Bash**. 
+
+1. Abra **RStudio** → **Tools** → **Global Options** → **Terminal**.  
+2. Em **New terminals open with**, selecione **Git Bash**.  
+3. Confirme e **reinicie** o RStudio.
+
+:::
+
+
+
+## GitHub {#sec-github}
+
+::: {.callout-tip icon="false"}
+## Criando uma Conta no GitHub
+
+1. Acesse [github.com](https://github.com){target="_blank"}
+
+2. Clique em **Sign up** para criar uma nova conta.
+
+3. Preencha os campos solicitados:
+
+    - **Username:** Escolha um nome de usuário.
+    - **Email:** Insira seu endereço de e-mail. 
+    - **Password:** Crie uma senha segura.
+
+4. Verifique seu e-mail e siga as instruções para confirmar sua conta.
+:::
+
+
+
+
+
+## Tutoriais e Livros Recomendados
+
+- [Quarto Get Started](https://quarto.org/docs/get-started/hello/rstudio.html){target="_blank"}
+- [R for Data Science](https://r4ds.hadley.nz/){target="_blank"} (Hadley Wickham)
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/){target="_blank"} (Jenny Bryan)
+
+
+
+## Documentação Oficial
+
+- [Quarto Documentation](https://quarto.org/docs/guide/){target="_blank"}
+- [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf){target="_blank"}
+- [RStudio User Guide](https://docs.posit.co/ide/user/){target="_blank"}
+- [Git Documentation](https://git-scm.com/doc){target="_blank"}
+
+
+
+
+

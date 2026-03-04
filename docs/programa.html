@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Washington S. da Silva">
+
+<title>Programa da Disciplina – Introdução à Ciência de Dados</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-bf2e01d90eb6f1efa692960fbc31ef4e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Introdução à Ciência de Dados</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./programa.html"> 
+<span class="menu-text">Programa da Disciplina</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cronograma.html"> 
+<span class="menu-text">Cronograma</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ambiente.html"> 
+<span class="menu-text">Ambiente Computacional</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./programa.html">Programa da Disciplina</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Início</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./programa.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Programa da Disciplina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cronograma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cronograma</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ambiente.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ambiente Computacional</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#objetivo-geral" id="toc-objetivo-geral" class="nav-link active" data-scroll-target="#objetivo-geral">Objetivo Geral</a></li>
+  <li><a href="#objetivos-especificos" id="toc-objetivos-especificos" class="nav-link" data-scroll-target="#objetivos-especificos">Objetivos Especificos</a></li>
+  <li><a href="#avaliação" id="toc-avaliação" class="nav-link" data-scroll-target="#avaliação">Avaliação</a></li>
+  <li><a href="#bibliografia-básica" id="toc-bibliografia-básica" class="nav-link" data-scroll-target="#bibliografia-básica">Bibliografia Básica</a></li>
+  <li><a href="#bibliografia-complementar" id="toc-bibliografia-complementar" class="nav-link" data-scroll-target="#bibliografia-complementar">Bibliografia Complementar</a></li>
+  <li><a href="#recursos-online" id="toc-recursos-online" class="nav-link" data-scroll-target="#recursos-online">Recursos Online</a></li>
+  <li><a href="#ementa" id="toc-ementa" class="nav-link" data-scroll-target="#ementa">Ementa</a></li>
+  <li><a href="#conteúdo-planejado" id="toc-conteúdo-planejado" class="nav-link" data-scroll-target="#conteúdo-planejado">Conteúdo Planejado</a>
+  <ul class="collapse">
+  <li><a href="#introdução-à-computação-científica-reprodutível" id="toc-introdução-à-computação-científica-reprodutível" class="nav-link" data-scroll-target="#introdução-à-computação-científica-reprodutível">1. Introdução à Computação Científica Reprodutível</a></li>
+  <li><a href="#fundamentos-de-probabilidade-e-simulação" id="toc-fundamentos-de-probabilidade-e-simulação" class="nav-link" data-scroll-target="#fundamentos-de-probabilidade-e-simulação">2. Fundamentos de Probabilidade e Simulação</a></li>
+  <li><a href="#fundamentos-de-inferência-estatística" id="toc-fundamentos-de-inferência-estatística" class="nav-link" data-scroll-target="#fundamentos-de-inferência-estatística">3. Fundamentos de Inferência Estatística</a></li>
+  </ul></li>
+  <li><a href="#recursos-didáticos-e-materiais-de-estudo" id="toc-recursos-didáticos-e-materiais-de-estudo" class="nav-link" data-scroll-target="#recursos-didáticos-e-materiais-de-estudo">Recursos Didáticos e Materiais de Estudo</a></li>
+  <li><a href="#metodologia-de-ensino" id="toc-metodologia-de-ensino" class="nav-link" data-scroll-target="#metodologia-de-ensino">Metodologia de Ensino</a></li>
+  <li><a href="#plano-de-aula" id="toc-plano-de-aula" class="nav-link" data-scroll-target="#plano-de-aula">Plano de Aula</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Programa da Disciplina</h1>
+<p class="subtitle lead">Introdução à Ciência dos Dados 2026/1 <br> Mestrado Profissional em Aministração</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Dr.&nbsp;Washington S. da Silva </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="objetivo-geral" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-geral">Objetivo Geral</h2>
+<p>Trata-se de um curso do tipo <em>hands-on</em>. O objetivo primário é equipar os mestrandos com conhecimentos fundacionais e ferramentas modernas para conduzirem projetos de pesquisa empírica reprodutíveis na área de Finanças, desenvolvendo capacidade crítica para implementar modelos empíricos robustos, interpretar resultados e comunicar análises computacionais no contexto de Finanças e de áreas correlacionadas.</p>
+<p>Os fundamentos envolvem computação científica reprodutível, fundamentos de teoria da probabilidade e inferência estatística.</p>
+<p>Um foco importante é demonstrar aos mestrandos que as competências e habilidades desenvolvidas representam não apenas requisitos para pesquisas acadêmicas alinhadas às boas práticas contemporâneas, mas constituem um conjunto de ferramentas diferenciadas para o desenvolvimento de soluções baseadas em dados para desafios reais do mercado de trabalho atual em Finanças e em outras áreas. Para isso, utiliza-se a metodologia CRISP-DM como estrutura orientadora para condução de análises de dados.</p>
+</section>
+<section id="objetivos-especificos" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-especificos">Objetivos Especificos</h2>
+<ol type="1">
+<li><p>Capacitar o mestrando em ferramentas e técnicas modernas de computação científica, incluindo: Ambiente de Desenvolvimento Integrado RStudio, Sistema de Publicação Quarto, linguagem R, controle de versão com Git e GitHub, e boas práticas de organização, documentação e compartilhamento de dados e códigos para garantir transparência e reprodutibilidade metodológica, tendo como diretriz a metodologia CRISP-DM para estruturação do processo analítico.</p></li>
+<li><p>Revisar, de forma aplicada, fundamentos de Probabilidade e Estatística necessários para o desenvolvimento, aplicação e interpretação crítica de modelos empíricos na área de Finanças, incluindo o uso de métodos de simulação para validação de resultados e avaliação de incertezas em contextos financeiros.</p></li>
+<li><p>Capacitar o mestrando para a comunicação efetiva de análises e resultados através da elaboração de relatórios, visualizações e apresentações utilizando o Sistema Quarto e LaTeX, com ênfase na documentação completa e transparente do processo de pesquisa que permita a verificação e reprodução dos resultados por terceiros.</p></li>
+</ol>
+</section>
+<section id="avaliação" class="level2">
+<h2 class="anchored" data-anchor-id="avaliação">Avaliação</h2>
+<p>O planejamento da disciplina prevê que os pontos referentes às avaliações serão distribuídos da seguinte forma:</p>
+<ol type="1">
+<li><p>Avaliação 1 = 33 pontos</p></li>
+<li><p>Avaliação 2 = 33 pontos</p></li>
+<li><p>Avaliação 4 = 34 pontos</p></li>
+</ol>
+<p>Para aprovação, é necessária a obtenção de pelo menos 60 pontos. Como em todo planejamento, pode haver alterações conforme o andamento da disciplina e o rendimento da turma.</p>
+</section>
+<section id="bibliografia-básica" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-básica">Bibliografia Básica</h2>
+<p>WICKHAM, Hadley; ÇETINKAYA-RUNDEL, Mine; GROLEMUND, Garrett. <strong>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</strong>. 2nd. ed.&nbsp;2023. O’Reilly Media, Inc.&nbsp;Disponível em: <a href="https://r4ds.hadley.nz" target="_blank">R for Data Science</a>. Tradução em Português disponível em: <a href="https://cienciadedatos.github.io/pt-r4ds/" target="_blank">R para Ciência de Dados</a></p>
+<p>DEVORE, J. L. <strong>Probabilidade e Estatística para Engenharia e Ciências</strong>. São Paulo: Thomson, 2006. Disponível na biblioteca do campus.</p>
+<p>SMAY, Chester; KIM, Albert Y. <strong>Introduction to Data Science: Data Wrangling and Visualization with R</strong>. 2nd Edition. CRC Press, 2025. Disponível em: <a href="https://rafalab.dfci.harvard.edu/dsbook-part-1/" target="_blank">Introduction to Data Science</a></p>
+<p>ISMAY, Chester; KIM, Albert Y.; VALDIVIA, Arturo. <strong>Statistical Inference via Data Science: A ModernDive into R and the Tidyverse</strong>. 2024. 2nd. Ed. CRC Press. Disponível em: <a href="https://moderndive.com/v2/" target="_blank">ModernDive</a></p>
+<p>CHANG, Winston. <strong>R Graphics Cookbook</strong>. 2025, O’Reilly. Disponível em: <a href="https://r-graphics.org" target="_blank">R Graphics Cookbook</a></p>
+</section>
+<section id="bibliografia-complementar" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-complementar">Bibliografia Complementar</h2>
+<p>BLITZSTEIN, Joseph K.; HWANG, Jessica. <strong>Introduction to Probability</strong>. 2ª ed.&nbsp;CRC Press, 2019. Material de curso disponível em: <a href="https://projects.iq.harvard.edu/stat110/home" target="_blank">projects.iq.harvard.edu/stat110</a></p>
+<p>TRIOLA, Mário F. <strong>Introdução à Estatística</strong>. 10 edição. Rio de Janeiro: LTC, 2008. Disponível na biblioteca do campus.</p>
+<p>TIMBERS, TIFFANY; CAMPBELL, Trevor; LEE, Melissa. <strong>Data Science: A First Introduction</strong>. CRC Press, 2024. Disponível em: <a href="https://datasciencebook.ca" target="_blank">Data Science: A First Introduction</a></p>
+<p>ALEXANDER, Rohan. <strong>Telling Stories with Data: With Applications in R and Python</strong>. 2023. CRC Press. Disponível em: <a href="https://tellingstorieswithdata.com" target="_blank">Telling Stories with Data</a></p>
+<p>BRYAN, Jennifer. <strong>Happy Git and GitHub for the useR</strong>. Disponível em: <a href="https://happygitwithr.com/" target="_blank">happygitwithr.com</a></p>
+<p>FARIA, Pedro Duarte. <strong>Introdução à Linguagem R: Seus Fundamentos e sua Prática</strong>. 2024. Disponível em: <a href="https://pedropark99.github.io/Introducao_R/" target="_blank">Introdução à Linguagem R</a></p>
+</section>
+<section id="recursos-online" class="level2">
+<h2 class="anchored" data-anchor-id="recursos-online">Recursos Online</h2>
+<ul>
+<li><p><a href="https://quarto.org/docs/guide/" target="_blank">Manual do Sistema Quarto</a></p></li>
+<li><p><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="_blank">Learn LaTeX in 30 minutes</a></p></li>
+<li><p><a href="https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf" target="_blank">Creating a document in Overleaf</a></p></li>
+<li><p><a href="https://hdsr.mitpress.mit.edu/" target="_blank">Harvard Data Science Review</a></p></li>
+</ul>
+</section>
+<section id="ementa" class="level2">
+<h2 class="anchored" data-anchor-id="ementa">Ementa</h2>
+<p>Introdução à Computação Científica Reproduzível: IDE Rstudio, Sistema Quarto, Linguagem R e Git/GitHub. Fundamentos de Probabilidade e Simulação. Fundamentos de Estatística e Simulação.</p>
+</section>
+<section id="conteúdo-planejado" class="level2">
+<h2 class="anchored" data-anchor-id="conteúdo-planejado">Conteúdo Planejado</h2>
+<p>Trata-se apenas de um planejamento e pode ser alterado conforme o andamento da disciplina e rendimento da turma.</p>
+<section id="introdução-à-computação-científica-reprodutível" class="level3">
+<h3 class="anchored" data-anchor-id="introdução-à-computação-científica-reprodutível">1. Introdução à Computação Científica Reprodutível</h3>
+<ul>
+<li>1.1. Conceitos Fundamentais de Ciência de Dados
+<ul>
+<li>1.1.1. O que é Ciência de Dados?</li>
+<li>1.1.2. O ciclo de vida de um projeto de ciência de dados</li>
+<li>1.1.3. Ciência de Dados aplicada à Finanças: casos de uso nas linhas de pesquisa do mestrado</li>
+</ul></li>
+<li>1.2. Computação Científica Reproduzível
+<ul>
+<li>1.2.1. Princípios da pesquisa reproduzível</li>
+<li>1.2.2. RStudio e projetos estruturados</li>
+<li>1.2.3. Interface e configuração do RStudio</li>
+<li>1.2.4. Projetos RStudio: criação, organização e boas práticas</li>
+</ul></li>
+<li>1.3. Sistema de Publicação Quarto
+<ul>
+<li>1.3.1. Fundamentos do Quarto: markdown, código e texto integrados</li>
+<li>1.3.2. Formatos de saída para comunicação científica (HTML, PDF, apresentações)</li>
+<li>1.3.3. Elementos do Quarto: cabeçalhos, parâmetros, chunks de código</li>
+<li>1.3.4. Introdução ao LaTeX para equações e formatação</li>
+</ul></li>
+<li>1.4. Introdução à Linguagem R
+<ul>
+<li>1.4.1. Sintaxe básica, operadores e tipos de dados</li>
+<li>1.4.2. Estruturas de dados fundamentais</li>
+<li>1.4.3. Importação e exportação de dados</li>
+<li>1.4.4. Manipulação de dados com tidyverse (dplyr, tidyr)</li>
+<li>1.4.5. Introdução à criação de funções</li>
+</ul></li>
+<li>1.5. Controle de Versão com Git e GitHub
+<ul>
+<li>1.5.1. Conceitos fundamentais e fluxo de trabalho básico</li>
+<li>1.5.2. Criando e mantendo um repositório para o projeto da disciplina</li>
+<li>1.5.3. Colaboração e integração com RStudio</li>
+</ul></li>
+</ul>
+</section>
+<section id="fundamentos-de-probabilidade-e-simulação" class="level3">
+<h3 class="anchored" data-anchor-id="fundamentos-de-probabilidade-e-simulação">2. Fundamentos de Probabilidade e Simulação</h3>
+<ul>
+<li>2.1. Conceitos Básicos de Probabilidade
+<ul>
+<li>2.1.1. Experimentos aleatórios, espaço amostral e eventos</li>
+<li>2.1.2. Axiomas da probabilidade</li>
+<li>2.1.3. Probabilidade Condicional e Independência</li>
+<li>2.1.4. Conceito de variável aleatória</li>
+<li>2.1.5. Distribuições discretas de probabilidade</li>
+<li>2.1.6. Distribuições contínuas de probabilidade</li>
+<li>2.1.7. Implementação de distribuições de probabilidade em R</li>
+<li>2.1.8. Lei dos Grandes Números e Teorema Central do Limite</li>
+<li>2.1.9. Características de Distribuições de Probabilidade
+<ul>
+<li>2.1.9.1. Valor Esperado, Variância e Desvio-Padrão</li>
+<li>2.1.9.2. Assimetria e Curtose</li>
+</ul></li>
+<li>2.1.10. Distribução Conjunta, Marginal e Condicional
+<ul>
+<li>2.1.10.1. Covariância e Correlação</li>
+</ul></li>
+</ul></li>
+<li>2.2. Simulação de Monte Carlo
+<ul>
+<li>2.2.1. Princípios básicos de simulação</li>
+<li>2.2.2. Geração de números aleatórios em R</li>
+<li>2.2.4. Aplicações em finanças
+<ul>
+<li>2.2.4.1. Análise de Viabilidade sob Incerteza</li>
+<li>2.2.4.2. Gestão de Risco e Fluxo de Caixa</li>
+<li>2.2.4.3. Medidas de Risco: VaR e ES (CVaR)</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="fundamentos-de-inferência-estatística" class="level3">
+<h3 class="anchored" data-anchor-id="fundamentos-de-inferência-estatística">3. Fundamentos de Inferência Estatística</h3>
+<ul>
+<li>3.1. Análise Exploratória de Dados
+<ul>
+<li>3.1.1. Medidas de tendência central/posição e dispersão</li>
+<li>3.1.2. Análise exploratória numérica e gráfica</li>
+</ul></li>
+<li>3.2. Fundamentos de Inferência Estatística
+<ul>
+<li>3.2.1. Amostragem Aleatória</li>
+<li>3.2.2. Estimação pontual e intervalar</li>
+<li>3.2.3. Interpretação de intervalos de confiança</li>
+<li>3.2.4. Simulação para compreensão da inferência estatística</li>
+</ul></li>
+<li>3.3. Testes de Hipóteses
+<ul>
+<li>3.3.1. Conceitos Principais</li>
+<li>3.3.2. Testes paramétricos principais</li>
+<li>3.3.3. Interpretação de resultados e significância prática vs.&nbsp;estatística</li>
+<li>3.3.4. Simulação e Inferência Estatística</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="recursos-didáticos-e-materiais-de-estudo" class="level2">
+<h2 class="anchored" data-anchor-id="recursos-didáticos-e-materiais-de-estudo">Recursos Didáticos e Materiais de Estudo</h2>
+<p>Entre os recursos didáticos utilizados na disciplina estão:</p>
+<ul>
+<li><p><strong>Materiais Primários para Estudo</strong>:</p>
+<ul>
+<li><p>Bibliografia recomendada.</p></li>
+<li><p>Slides e notas de aula (disponibilizados no site da disciplina).</p></li>
+<li><p>Tutoriais desenvolvidos em Quarto.</p></li>
+<li><p>Arquivos quarto (<em>reports</em>) demonstrativos (.qmd).</p></li>
+</ul></li>
+<li><p><strong>Ambiente e Ferramentas</strong>:</p>
+<ul>
+<li><p>Repositório GitHub da disciplina para compartilhamento de materiais e submissão de atividades.</p></li>
+<li><p>Ambiente virtual de aprendizagem para suporte e comunicação.</p></li>
+<li><p>Arquivos de dados reais e simulados para os exemplos.</p></li>
+</ul></li>
+</ul>
+<p><strong>Importante</strong>: Os slides, tutoriais e demais recursos disponibilizados constituem os materiais primários para estudo e preparação para as avaliações, devendo ser utilizados em conjunto com a bibliografia recomendada. Todo o material será disponibilizado no site da disciplinar e/ou no ambiente virtual de aprendizagem.</p>
+</section>
+<section id="metodologia-de-ensino" class="level2">
+<h2 class="anchored" data-anchor-id="metodologia-de-ensino">Metodologia de Ensino</h2>
+<p>A disciplina será conduzida de forma <strong>teórico-aplicada</strong>, com ênfase em implementação computacional e interpretação substantiva.</p>
+<ul>
+<li><p>Parte das aulas serão expositivas: apresentação de ferramentas computacionais, conceitos e modelos.</p></li>
+<li><p>Parte das aulas práticas: <strong>Em cada aula, parte relevante do tempo</strong> <strong>será dedicada à elaboração de código R pelos mestrandos</strong>.</p></li>
+<li><p>Simulações como ferramenta didática.</p></li>
+<li><p>Atividades avaliativas.</p></li>
+</ul>
+</section>
+<section id="plano-de-aula" class="level2">
+<h2 class="anchored" data-anchor-id="plano-de-aula">Plano de Aula</h2>
+<p>Certamente, o planejamento a seguir está sujeito a alterações, conforme o andamento da disciplina e o rendimento da turma.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Aula</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: left;">Tópicos Principais</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5/3/25</td>
+<td style="text-align: left;">Apresentação da Disicplina. Introdução à Computação Científica</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">12/3/26</td>
+<td style="text-align: left;">Introdução à Computação Científica</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">19/3/26</td>
+<td style="text-align: left;">Introdução à Computação Científica</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">26/3/26</td>
+<td style="text-align: left;">Introdução à Computação Científica</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">9/4/26</td>
+<td style="text-align: left;">Introdução à Computação Científica</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">16/4/26</td>
+<td style="text-align: left;">Avaliação 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">23/4/26</td>
+<td style="text-align: left;">Probabilidade e Simulação</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">30/3/26</td>
+<td style="text-align: left;">Probabilidade e Simulação</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">7/5/26</td>
+<td style="text-align: left;">Probabilidade e Simulação</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">14/5/26</td>
+<td style="text-align: left;">Avaliação 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">21/5/26</td>
+<td style="text-align: left;">Inferência Estatística</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">28/5/26</td>
+<td style="text-align: left;">Inferência Estatística</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">11/6/26</td>
+<td style="text-align: left;">Inferência Estatística</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">18/6/26</td>
+<td style="text-align: left;">Inferência Estatística</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">25/6/26</td>
+<td style="text-align: left;">Avaliação 3 / <em>Encerramento</em></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2026 Washington Santos da Silva</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/washingtonssilva/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://washingtonsilva.github.io">
+      <i class="bi bi-globe" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
