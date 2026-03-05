@@ -28,11 +28,22 @@ navegador padrão.
 
 
 
-# Aula 1 (05/03)
 
-Os materiais (slides, etc.) da primeira aula estarão disponíveis neste seção.
+# Aula 1 (05/03/26)
 
+- **Slides:**
 
+  - [Slides Aula 1](slides/01-aula-slides.html){target="_blank"}
+
+- **Artigos para leitura/estudo**
+
+  - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510){target="_blank"} 
+  
+  - [Fostering Better Coding Practices for Data Scientists](https://hdsr.mitpress.mit.edu/pub/8wsiqh1c/release/4){target="_blank"}
+  
+  - [The History of Data Economy I, II, III, IV - pdf](/artigos/history_of_data_economy.pdf){target="_blank"} 
+  
+  - [How to Pick a Programming Language - Nature 640, 1116-1117 (2025)](/artigos/d41586-025-01241-6.pdf){target="_blank"}  
   
  
 
