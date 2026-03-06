@@ -37,7 +37,7 @@ navegador padrão.
 
 - **Artigos para leitura/estudo**
 
-  - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510){target="_blank"} 
+  - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005510&type=printable){target="_blank"} 
   
   - [Fostering Better Coding Practices for Data Scientists](https://hdsr.mitpress.mit.edu/pub/8wsiqh1c/release/4){target="_blank"}
   
