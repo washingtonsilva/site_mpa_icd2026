@@ -78,19 +78,20 @@ navegador padrão.
  
  
  
- - **Leitura/estudo MUITO importantes**
+- **Leitura/estudo MUITO importantes**
 
+
+  - [Cap. 2: Fluxo de trabalho básico](http://pt.r4ds.hadley.nz/workflow-scripts.html){target="_blank"}
+
+  - [Cap. 3: Transformação de dados](http://pt.r4ds.hadley.nz/data-transform.html){target="_blank"}
+
+  - [Cap. 4: Fluxo de trabalho: estilo de código](http://pt.r4ds.hadley.nz/workflow-style.html){target="_blank"}
+
+  - [Cap. 6: Fluxo de trabalho: scripts e projetos](http://pt.r4ds.hadley.nz/workflow-scripts.html){target="_blank"}
+  
   - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005510&type=printable){target="_blank"} 
   
   - [Fostering Better Coding Practices for Data Scientists](https://hdsr.mitpress.mit.edu/pub/8wsiqh1c/release/4){target="_blank"}
-
-- [Cap. 2: Fluxo de trabalho básico](http://pt.r4ds.hadley.nz/workflow-scripts.html){target="_blank"}
-
-- [Cap. 3: Transformação de dados](http://pt.r4ds.hadley.nz/data-transform.html){target="_blank"}
-
-- [Cap. 4: Fluxo de trabalho: estilo de código](http://pt.r4ds.hadley.nz/workflow-style.html){target="_blank"}
-
-- [Cap. 6: Fluxo de trabalho: scripts e projetos](http://pt.r4ds.hadley.nz/workflow-scripts.html){target="_blank"}
 
 
 
