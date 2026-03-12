@@ -44,8 +44,53 @@ navegador padrão.
   - [The History of Data Economy I, II, III, IV - pdf](/artigos/history_of_data_economy.pdf){target="_blank"} 
   
   - [How to Pick a Programming Language - Nature 640, 1116-1117 (2025)](/artigos/d41586-025-01241-6.pdf){target="_blank"}  
-  
+
+
+
+
+
+# Aula 2 (12/03/26)
+
+- **Slides:**
+
+  - [Slides Aula 2](slides/02-aula-slides.html){target="_blank"}
+
+
+- **Materiais:**
+
+  - **Arquivo de dados:** [dados_vendas.csv](dados/dados_vendas.csv)
+
+  ::: {.callout-tip}
+  ## Como baixar e salvar o arquivo de dados (Windows)
+
+  1. Clique com o botão direito do mouse no link **dados_vendas.csv** acima e selecione 
+  **Salvar arquivo como...**.
+  2. Verifique se o arquivo que será salvo é **dados_vendas.csv**
+  2. Escolha a pasta **Downloads** e clique em **Salvar**.
+  3. Abra a pasta do seu projeto no Windows Explorer e localize a pasta 
+  `data/raw`.
+  4. Copie o arquivo `dados_vendas.csv` da pasta **Downloads** para a pasta 
+  **raw**.
+
+  **Dica:** se souber como fazer, no passo 2 você pode salvar o arquivo 
+  diretamente na pasta `data/raw`.
+  :::
  
+ 
+ 
+ - **Leitura/estudo MUITO importantes**
+
+  - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005510&type=printable){target="_blank"} 
+  
+  - [Fostering Better Coding Practices for Data Scientists](https://hdsr.mitpress.mit.edu/pub/8wsiqh1c/release/4){target="_blank"}
+
+- [Cap. 2: Fluxo de trabalho básico](http://pt.r4ds.hadley.nz/workflow-scripts.html){target="_blank"}
+
+- [Cap. 3: Transformação de dados](http://pt.r4ds.hadley.nz/data-transform.html){target="_blank"}
+
+- [Cap. 4: Fluxo de trabalho: estilo de código](http://pt.r4ds.hadley.nz/workflow-style.html){target="_blank"}
+
+- [Cap. 6: Fluxo de trabalho: scripts e projetos](http://pt.r4ds.hadley.nz/workflow-scripts.html){target="_blank"}
 
 
 
