@@ -35,7 +35,7 @@ navegador padrão.
 
   - [Slides Aula 1](slides/01-aula-slides.html){target="_blank"}
 
-- **Artigos para leitura/estudo**
+- **Leitura/estudo Importantes**
 
   - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005510&type=printable){target="_blank"} 
   
@@ -80,7 +80,6 @@ navegador padrão.
  
 - **Leitura/estudo MUITO importantes**
 
-
   - [Cap. 2: Fluxo de trabalho básico](http://pt.r4ds.hadley.nz/workflow-scripts.html){target="_blank"}
 
   - [Cap. 3: Transformação de dados](http://pt.r4ds.hadley.nz/data-transform.html){target="_blank"}
@@ -92,6 +91,36 @@ navegador padrão.
   - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005510&type=printable){target="_blank"} 
   
   - [Fostering Better Coding Practices for Data Scientists](https://hdsr.mitpress.mit.edu/pub/8wsiqh1c/release/4){target="_blank"}
+
+
+
+
+
+# Aula 3 (19/03/26)
+
+- **Slides:**
+
+  - [Slides Aula 3](slides/03-aula-slides.html){target="_blank"}
+  
+ 
+  
+- **Lista de Exercícios**
+
+  - [Lista de Exercícios 2](listas-exercicios/02-lista.html){target="_blank"}
+
+
+
+- **Materiais:**
+
+  - **Arquivo de dados:** [productionlog_sample.csv](dados/productionlog_sample.csv)
+
+
+ 
+- **Leitura/estudo Importantes**
+
+ - [Cap. 3: Transformação de dados](http://pt.r4ds.hadley.nz/data-transform.html){target="_blank"}
+
+ - [Introdução à Linguagem R - Cap. 5](https://pedropark99.github.io/Introducao_R/Capítulos/04-transformacao.html){target="_blank"}
 
 
 

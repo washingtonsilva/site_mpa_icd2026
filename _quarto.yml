@@ -4,7 +4,10 @@ project:
   render:
     - "*.qmd"
   resources:
+    - "slides/"
     - "dados/"
+    - "listas-exercicios/"
+    - "artigos/"
 
 website:
   title: "Introdução à Ciência de Dados"

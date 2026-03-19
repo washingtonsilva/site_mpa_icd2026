@@ -1,7 +1,55 @@
-.Rproj.user
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# =========================
+# Quarto (website)
+# =========================
+
+# Saída padrão do Quarto (você publica via /docs)
+_site/
+
+# Cache e arquivos temporários do Quarto
+.quarto/
+.quarto-cache/
+.quarto-idx/
+
+# Freeze (ignorar se você não pretende versionar saídas congeladas)
+_freeze/
+
+# =========================
+# R / RStudio / Positron
+# =========================
 .Rhistory
 .RData
 .Ruserdata
+.Rproj.user/
+
+
+# =========================
+# knitr / cache de chunks
+# =========================
+*_cache/
+cache/
+
+# =========================
+# Logs e temporários
+# =========================
+*.log
+*.tmp
+*.temp
+
+# =========================
+# Outros
+# =========================
+Thumbs.db
 
 /.quarto/
 **/*.quarto_ipynb
+
