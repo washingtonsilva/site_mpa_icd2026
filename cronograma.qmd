@@ -124,3 +124,58 @@ navegador padrão.
 
 
 
+
+# Aula 4 (26/03/26)
+
+- **Slides:**
+
+  - [Slides Aula 4](slides/04-aula-slides.html){target="_blank"}
+
+
+- **Lista de Exercícios**
+
+  - [Lista de Exercícios 3](listas-exercicios/03-lista.html){target="_blank"}
+
+
+- **Materiais da aula:**
+
+  - **Arquivos de dados da Lista 3**
+
+    - **Exercício 1**
+      - [produtos.csv](dados/produtos.csv)
+      - [vendas.csv](dados/vendas.csv)
+      - [clientes.csv](dados/clientes.csv)
+
+    - **Exercício 2**
+      - [governanca.csv](dados/governanca.csv)
+      - [risco.csv](dados/risco.csv)
+      - [contabeis.csv](dados/contabeis.csv)
+
+    - **Exercício 3**
+      - [acoes.csv](dados/acoes.csv)
+      - [eventos_corporativos.csv](dados/eventos_corporativos.csv)
+
+  ::: {.callout-tip}
+  ## Como baixar e salvar os arquivos de dados da Lista 3 (Windows)
+
+  1. Clique com o botão direito do mouse em cada arquivo `.csv` acima e selecione **Salvar arquivo como...**.
+  2. Salve os arquivos na pasta **Downloads**.
+  3. Abra a pasta do seu projeto no Windows Explorer e localize a pasta `data/raw`.
+  4. Copie os arquivos `.csv` da pasta **Downloads** para a pasta `data/raw`.
+
+  **Dica:** se souber como fazer, você pode salvar os arquivos diretamente na pasta `data/raw`.
+  :::
+
+
+- **Leitura/estudo importantes**
+
+  - [Cap. 5: Organização de Dados](http://pt.r4ds.hadley.nz/data-tidy.html){target="_blank"}
+
+  - [Cap. 19 Joins](http://pt.r4ds.hadley.nz/joins.html){target="_blank"}
+
+  - [Tutorial sobre Git e GitHub](https://washingtonsilva.github.io/tutorials/git/){target="_blank"}
+
+  - [Tutorial sobre Markdown](https://washingtonsilva.github.io/tutorials/markdown/){target="_blank"}
+
+
+  
