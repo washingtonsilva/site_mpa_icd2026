@@ -178,4 +178,33 @@ navegador padrão.
   - [Tutorial sobre Markdown](https://washingtonsilva.github.io/tutorials/markdown/){target="_blank"}
 
 
+
+
+# Aula 5 (09/04/26)
+
+- **Slides:**
+
+  - [Slides Aula 5](slides/05-aula-slides.html){target="_blank"}
+
+
+- **Lista de Exercícios**
+
+  - [Lista de Exercícios 4](listas-exercicios/04-lista.html){target="_blank"}
+
+  
+- **Materiais:**
+
+  - **Arquivo de dados:** [demonstracoes.csv](dados/demonstracoes.csv)
+
+  
+- **Leitura/estudo importantes**
+
+  - [R para Ciência de Dados - Cap. 25: Funções](http://pt.r4ds.hadley.nz/functions.html){target="_blank"}
+  
+  - [R para Ciência de Dados - Cap. 26: Iteração](http://pt.r4ds.hadley.nz/iteration.html){target="_blank"}
+  
+  - [R para Ciência de Dados - Cap. 28: Quarto](http://pt.r4ds.hadley.nz/quarto.html){target="_blank"}
+  
+  - [Documentação oficial do Quarto: Tutorial](https://quarto.org/docs/get-started/hello/rstudio.html){target="_blank"}
+
   
