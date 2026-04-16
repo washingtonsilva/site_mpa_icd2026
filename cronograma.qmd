@@ -107,6 +107,7 @@ navegador padrão.
 - **Lista de Exercícios**
 
   - [Lista de Exercícios 2](listas-exercicios/02-lista.html){target="_blank"}
+  - [Soluções da Lista de Exercícios 2](listas-exercicios/02-lista-solucoes.html){target="_blank"}
 
 
 
@@ -135,6 +136,7 @@ navegador padrão.
 - **Lista de Exercícios**
 
   - [Lista de Exercícios 3](listas-exercicios/03-lista.html){target="_blank"}
+  - [Soluções da Lista de Exercícios 3](listas-exercicios/03-lista-solucoes.html){target="_blank"}
 
 
 - **Materiais da aula:**
@@ -190,6 +192,7 @@ navegador padrão.
 - **Lista de Exercícios**
 
   - [Lista de Exercícios 4](listas-exercicios/04-lista.html){target="_blank"}
+  - [Soluções da Lista de Exercícios 4](listas-exercicios/04-lista-solucoes.html){target="_blank"}
 
   
 - **Materiais:**
@@ -207,4 +210,20 @@ navegador padrão.
   
   - [Documentação oficial do Quarto: Tutorial](https://quarto.org/docs/get-started/hello/rstudio.html){target="_blank"}
 
+
+
+
+
+# Aula 6 (16/04/26)
+
+- **Avaliação 1**
+
+  - [Clique aqui para acessar a Avaliação 1](avaliacoes/01-avaliacao.html){target="_blank"}
+  
+- **Materiais:** Arquivos de dados para a Avaliação 1
+
+  - **Questão 1**
+    - [agencias.csv](dados/01-avaliacao/agencias.csv){target="_blank"}
+    - [credito_trimestral.csv](dados/01-avaliacao/credito_trimestral.csv){target="_blank"}
+    - [inadimplencia.csv](dados/01-avaliacao/inadimplencia.csv){target="_blank"}
   

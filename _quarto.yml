@@ -8,6 +8,7 @@ project:
     - "dados/"
     - "listas-exercicios/"
     - "artigos/"
+    - "avaliacoes/"
 
 website:
   title: "Introdução à Ciência de Dados"
