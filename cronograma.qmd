@@ -227,3 +227,26 @@ navegador padrão.
     - [credito_trimestral.csv](dados/01-avaliacao/credito_trimestral.csv){target="_blank"}
     - [inadimplencia.csv](dados/01-avaliacao/inadimplencia.csv){target="_blank"}
   
+
+
+
+
+# Aula 7 (23/04/26)
+
+- **Slides:**
+
+  - [Slides Aula 7](slides/07-aula-slides.html){target="_blank"}
+
+- **Leitura/estudo Importantes**
+
+  - [R par Ciência de Dados:  Cap. 28](https://pt.r4ds.hadley.nz/quarto.html){target="_blank"} 
+  - [Tutorial sobre Git e GitHub](https://washingtonsilva.github.io/tutorials/git/){target="_blank"}
+  - [Happy Git and GitHub for the useR](https://happygitwithr.com){target="_blank"}
+
+- **O Risco das Planilhas Eletrônicas**
+
+  - [European Spreadsheet Risks Interest Group](https://eusprig.org/research-info/original-horror-stories/){target="_blank"}
+  - [The Dirty Dozen](artigos/the-dirty-dozen.pdf)
+
+
+  
