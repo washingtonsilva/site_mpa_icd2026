@@ -307,7 +307,7 @@ conforme o andamento da disciplina e o rendimento da turma.
 | 5    | 9/4/26   | Introdução à Computação Científica                  |
 | 6    | 16/4/26  | Avaliação 1                                         |
 | 7    | 23/4/26  | Probabilidade e Simulação                           |
-| 8    | 30/3/26  | Probabilidade e Simulação                           |
+| 8    | 30/4/26  | Probabilidade e Simulação                           |
 | 9    | 7/5/26   | Probabilidade e Simulação                           | 
 |10    | 14/5/26  | Avaliação 2                                         |
 |11    | 21/5/26  | Inferência Estatística                              |
