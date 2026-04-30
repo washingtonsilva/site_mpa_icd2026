@@ -249,4 +249,12 @@ navegador padrão.
   - [The Dirty Dozen](artigos/the-dirty-dozen.pdf)
 
 
+
+
+# Aula 8 (30/04/26)
+
+- **Slides:**
+
+  - [Slides Aula 8](slides/08-aula-slides.html){target="_blank"}
+
   
