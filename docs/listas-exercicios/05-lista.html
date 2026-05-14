@@ -8,7 +8,7 @@
 
 <meta name="author" content="Prof. Dr. Washington S. da Silva">
 
-<title>Lista de Exercícios 6</title>
+<title>Lista de Exercícios 5</title>
 <style>
 
 code{white-space: pre-wrap;}
@@ -20,41 +20,6 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
-}
-
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -2391,7 +2356,7 @@ background: transparent !important;
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Lista de Exercícios 6</h1>
+      <h1 class="title">Lista de Exercícios 5</h1>
             <p class="subtitle lead">Introdução à Ciência de Dados - 2026/1 <br> Mestrado em Administração</p>
                       </div>
   </div>
@@ -2409,7 +2374,7 @@ background: transparent !important;
       <div>
       <div class="quarto-title-meta-heading">Data de Publicação</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">14 de maio de 2026</p>
+        <p class="date">7 de maio de 2026</p>
       </div>
     </div>
     
@@ -2424,11 +2389,10 @@ background: transparent !important;
    
   <ul>
   <li><a href="#exercício-1" id="toc-exercício-1" class="nav-link active" data-scroll-target="#exercício-1">Exercício 1</a></li>
-  <li><a href="#exercício-2" id="toc-exercício-2" class="nav-link" data-scroll-target="#exercício-2">Exercício 2</a>
-  <ul class="collapse">
-  <li><a href="#ideia-básica" id="toc-ideia-básica" class="nav-link" data-scroll-target="#ideia-básica">Ideia básica</a></li>
-  <li><a href="#exemplo" id="toc-exemplo" class="nav-link" data-scroll-target="#exemplo">Exemplo</a></li>
-  </ul></li>
+  <li><a href="#exercício-2" id="toc-exercício-2" class="nav-link" data-scroll-target="#exercício-2">Exercício 2</a></li>
+  <li><a href="#exercício-3" id="toc-exercício-3" class="nav-link" data-scroll-target="#exercício-3">Exercício 3</a></li>
+  <li><a href="#exercício-4" id="toc-exercício-4" class="nav-link" data-scroll-target="#exercício-4">Exercício 4</a></li>
+  <li><a href="#exercício-5" id="toc-exercício-5" class="nav-link" data-scroll-target="#exercício-5">Exercício 5</a></li>
   </ul>
 </nav>
 </div>
@@ -2442,164 +2406,147 @@ background: transparent !important;
 
 <section id="exercício-1" class="level2">
 <h2 class="anchored" data-anchor-id="exercício-1">Exercício 1</h2>
-<p>Em simulações computacionais, frequentemente precisamos gerar números que se comportem como se fossem aleatórios. No entanto, computadores comuns executam instruções determinísticas. Por isso, muitos algoritmos de simulação usam <strong>números pseudoaleatórios</strong>: sequências geradas por regras matemáticas fixas, mas que procuram imitar certas propriedades de uma sequência aleatória.</p>
-<p>Um dos métodos historicamente mais importantes para isso é o <strong>gerador congruencial linear</strong>, associado aos trabalhos de D. H. Lehmer no contexto dos primeiros computadores digitais. A ideia era simples e computacionalmente barata: começar com um valor inicial, chamado <strong>semente</strong>, e aplicar repetidamente uma fórmula para gerar uma sequência de inteiros com aparência irregular. Esse método é hoje mais importante como ferramenta didática do que como gerador moderno de uso geral. O R usa geradores mais sofisticados; aqui, o objetivo é abrir a “caixa-preta” da geração pseudoaleatória com um algoritmo simples.</p>
-<p>O algoritmo é:</p>
-<p><span class="math display">\[
-X_n = (aX_{n-1} + c) \bmod m,
-\]</span></p>
-<p>em que <span class="math inline">\(X_0\)</span> é a semente, <span class="math inline">\(a\)</span> é o multiplicador, <span class="math inline">\(c\)</span> é o incremento e <span class="math inline">\(m\)</span> é o módulo. Em R, o operador de módulo é <code>%%</code>.</p>
-<p>Neste exercício, todos esses parâmetros devem ser tratados como inteiros, com <span class="math inline">\(m &gt; 0\)</span> e <span class="math inline">\(X_0 \in \{0,1,\ldots,m-1\}\)</span>.</p>
-<p>A sequência <span class="math inline">\(X_n\)</span> gera inteiros entre <span class="math inline">\(0\)</span> e <span class="math inline">\(m-1\)</span>. Para obter números no intervalo <span class="math inline">\([0,1)\)</span>, definimos:</p>
-<p><span class="math display">\[
-U_n = \frac{X_n}{m}.
-\]</span></p>
-<p>Assim, os valores <span class="math inline">\(U_n\)</span> formam uma sequência pseudoaleatória que tenta imitar sorteios de uma distribuição uniforme no intervalo <span class="math inline">\([0,1)\)</span>. Com <span class="math inline">\(m\)</span> pequeno, essa aproximação é grosseira, pois só existem poucos valores possíveis; com <span class="math inline">\(m\)</span> grande e parâmetros bem escolhidos, a aproximação pode ser muito melhor.</p>
-<p>Esse ponto é importante porque muitas simulações de Monte Carlo começam com números pseudoaleatórios uniformes. Na próxima aula, veremos que outras distribuições podem ser simuladas a partir de uma uniforme, por exemplo usando a transformada inversa.</p>
-<p><strong>Questões</strong></p>
-<ol type="1">
-<li><p>Considere <span class="math inline">\(a = 5\)</span>, <span class="math inline">\(c = 3\)</span>, <span class="math inline">\(m = 8\)</span> e semente <span class="math inline">\(X_0 = 1\)</span>. Calcule manualmente os valores de <span class="math inline">\(X_1,\ldots,X_8\)</span> e os correspondentes valores de <span class="math inline">\(U_n = X_n/m\)</span>.</p></li>
-<li><p>Implemente em R uma função chamada <code>lcg()</code> que receba <code>n</code>, <code>seed</code>, <code>a</code>, <code>c</code> e <code>m</code>, e devolva uma tabela com as colunas <code>iteracao</code>, <code>x</code> e <code>u</code>.</p></li>
-</ol>
-<p><strong>Dica para implementar a função <code>lcg()</code></strong></p>
-<p>A cada iteração, o novo valor <span class="math inline">\(X_n\)</span> depende do valor imediatamente anterior, <span class="math inline">\(X_{n-1}\)</span>. Por isso, a função precisa guardar o último valor gerado e atualizá-lo dentro do laço. No esqueleto abaixo, substitua cada <code>___</code> pela expressão ou pelo nome de objeto apropriado. Uma estrutura possível é:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>lcg <span class="ot">&lt;-</span> <span class="cf">function</span>(n, seed, a, c, m) {</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Crie vetores vazios para guardar os valores gerados.</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  u <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># No início, o valor anterior é a semente X_0.</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  x_anterior <span class="ot">&lt;-</span> seed</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n) {</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Calcule a expressão a * X_{n-1} + c.</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    valor_bruto <span class="ot">&lt;-</span> ___ <span class="sc">*</span> ___ <span class="sc">+</span> ___</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Guarde em x[i] o resto da divisão por m.</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    x[i] <span class="ot">&lt;-</span> ___ <span class="sc">%%</span> ___</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. Divida x[i] por m para obter u[i], um valor em [0, 1).</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    u[i] <span class="ot">&lt;-</span> ___ <span class="sc">/</span> ___</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4. O valor guardado em x[i] será usado na próxima repetição.</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    x_anterior <span class="ot">&lt;-</span> ___</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Organize a sequência gerada em uma tabela.</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  resultado <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">iteracao =</span> ___,</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> ___,</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">u =</span> ___</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(resultado)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Teste sua função com os parâmetros do cálculo manual.</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>teste_lcg <span class="ot">&lt;-</span> <span class="fu">lcg</span>(<span class="at">n =</span> ___, <span class="at">seed =</span> ___, <span class="at">a =</span> ___, <span class="at">c =</span> ___, <span class="at">m =</span> ___)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>teste_lcg</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Depois de resolver o item 1 manualmente, use os valores calculados para conferir se a função está reproduzindo a mesma sequência.</p>
-<ol start="3" type="1">
-<li>Use sua função para gerar 20 valores com:</li>
-</ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lcg</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">seed =</span> <span class="dv">1</span>, <span class="at">a =</span> <span class="dv">5</span>, <span class="at">c =</span> <span class="dv">3</span>, <span class="at">m =</span> <span class="dv">8</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Identifique quando a sequência retorna à semente e quando os valores de <code>u</code> começam a se repetir.</p>
-<ol start="4" type="1">
-<li>Agora use:</li>
-</ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lcg</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">seed =</span> <span class="dv">10</span>, <span class="at">a =</span> <span class="dv">11</span>, <span class="at">c =</span> <span class="dv">4</span>, <span class="at">m =</span> <span class="dv">23</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Compare com a sequência anterior. Esse segundo conjunto de parâmetros, que usa um módulo maior, aumentou a variedade de valores observados em <span class="math inline">\([0,1)\)</span>? A sequência observada parece ter ciclo mais longo?</p>
-<ol start="5" type="1">
-<li>Escreva um comentário interpretativo discutindo:</li>
-</ol>
+<p>Uma aplicação financeira pode gerar, em um mês, um dos seguintes retornos líquidos: <span class="math inline">\(6\%\)</span>, <span class="math inline">\(2\%\)</span>, <span class="math inline">\(-1\%\)</span> ou <span class="math inline">\(-4\%\)</span>. As probabilidades desses resultados são, respectivamente, <span class="math inline">\(0{,}15\)</span>, <span class="math inline">\(0{,}45\)</span>, <span class="math inline">\(0{,}25\)</span> e <span class="math inline">\(0{,}15\)</span>.</p>
+<p>Simule pelo menos 10.000 meses independentes desse processo e estime:</p>
 <ul>
-<li>por que a sequência é pseudoaleatória, e não verdadeiramente aleatória;</li>
-<li>qual é o papel da semente;</li>
-<li>por que os valores <span class="math inline">\(U_n\)</span> podem ser vistos como uma aproximação de uma Uniforme(0,1);</li>
-<li>por que ciclos são uma limitação;</li>
-<li>por que gerar uniformes pseudoaleatórias é uma etapa fundamental para simulações de Monte Carlo.</li>
+<li>o valor esperado do retorno mensal;</li>
+<li>a variância e o desvio-padrão;</li>
+<li>a probabilidade de retorno negativo.</li>
 </ul>
-<p>Não use <code>runif()</code> nem <code>sample()</code> para gerar os valores deste exercício. O objetivo é construir manualmente um gerador simples e entender a lógica básica por trás da geração de números pseudoaleatórios uniformes.</p>
-<p>Referência para leitura: Andrew Heiss, <a href="https://www.andrewheiss.com/blog/2026/04/13/seeds-predetermined-universes/">“Generating universes within universes with a single seed”</a>.</p>
+<p><strong>Dica: estrutura sugerida do código</strong></p>
+<ol type="1">
+<li><p>Use <code>set.seed(20260507)</code> e represente os retornos em decimal, por exemplo, <code>c(0.06, 0.02, -0.01, -0.04)</code>.</p></li>
+<li><p>Crie os vetores <code>retornos_possiveis</code> e <code>probabilidades</code>.</p></li>
+<li><p>Gere a amostra com:</p></li>
+</ol>
+<p><code>sample(..., size = 10000, replace = TRUE, prob = ...)</code></p>
+<ol start="4" type="1">
+<li>Calcule <code>mean(retornos)</code>, <code>var(retornos)</code>, <code>sd(retornos)</code> e <code>mean(retornos &lt; 0)</code>.</li>
+</ol>
 </section>
 <section id="exercício-2" class="level2">
 <h2 class="anchored" data-anchor-id="exercício-2">Exercício 2</h2>
-<p>Os métodos de simulação de Monte Carlo são úteis para obter soluções numéricas aproximadas para problemas que podem ser difíceis de resolver analiticamente. Neste exercício, vamos usar exemplos simples para entender como Monte Carlo aproxima integrais definidas e comparar as estimativas com uma referência numérica obtida em R.</p>
-<section id="ideia-básica" class="level3">
-<h3 class="anchored" data-anchor-id="ideia-básica">Ideia básica</h3>
-<p>Se <span class="math inline">\(U\)</span> é uma variável aleatória com distribuição uniforme no intervalo <span class="math inline">\([0,1]\)</span> e <span class="math inline">\(f\)</span> é uma função integrável, então:</p>
-<p><span class="math display">\[
-E[f(U)] = \int_0^1 f(x)\,dx.
-\]</span></p>
-<p>Pela Lei dos Grandes Números, se <span class="math inline">\(U_1,\ldots,U_N\)</span> são valores pseudoaleatórios que se comportam como sorteios de uma uniforme em <span class="math inline">\([0,1]\)</span>, então:</p>
-<p><span class="math display">\[
-\frac{1}{N}\sum_{i=1}^{N} f(U_i)
-\approx
-\int_0^1 f(x)\,dx.
-\]</span></p>
-<p>Para uma integral em um intervalo geral <span class="math inline">\([a,b]\)</span>, usamos:</p>
-<p><span class="math display">\[
-\int_a^b f(x)\,dx
-=
-(b-a)E[f(U)],
-\quad U \sim \text{Uniforme}(a,b).
-\]</span></p>
-<p>Assim, a aproximação de Monte Carlo é:</p>
-<p><span class="math display">\[
-\int_a^b f(x)\,dx
-\approx
-(b-a)\frac{1}{N}\sum_{i=1}^{N} f(U_i),
-\quad U_i \sim \text{Uniforme}(a,b).
-\]</span></p>
-</section>
-<section id="exemplo" class="level3">
-<h3 class="anchored" data-anchor-id="exemplo">Exemplo</h3>
-<p>Suponha que desejamos aproximar:</p>
-<p><span class="math display">\[
-\int_0^1 \frac{\sin(x(1-x))}{1+x+\sqrt{x}}\,dx.
-\]</span></p>
-<p>Podemos usar integração de Monte Carlo em R:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2023</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sin</span>(x <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> x)) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> x <span class="sc">+</span> <span class="fu">sqrt</span>(x))</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="dv">100000</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>u <span class="ot">&lt;-</span> <span class="fu">runif</span>(N, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>estimativa_mc <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">f</span>(u))</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>estimativa_mc</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Também podemos obter uma aproximação numérica de alta precisão com <code>integrate()</code>:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">integrate</span>(f, <span class="at">lower =</span> <span class="dv">0</span>, <span class="at">upper =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p><strong>Questões</strong></p>
-<p>Use integração de Monte Carlo para estimar as integrais abaixo com <span class="math inline">\(N = 1000\)</span> repetições. Para cada item:</p>
+<p>Em uma operação de crédito, podem ocorrer três resultados ao final do período:</p>
+<ul>
+<li>pagamento em dia, com lucro de R$ 900;</li>
+<li>atraso com renegociação, com lucro de R$ 150;</li>
+<li>inadimplência, com prejuízo de R$ 3.500.</li>
+</ul>
+<p>As probabilidades desses resultados são <span class="math inline">\(0{,}88\)</span>, <span class="math inline">\(0{,}08\)</span> e <span class="math inline">\(0{,}04\)</span>, respectivamente.</p>
+<p>Primeiro, simule pelo menos 20.000 operações individuais e estime:</p>
+<ul>
+<li>o valor esperado do lucro por operação;</li>
+<li>o desvio-padrão do lucro;</li>
+<li>a probabilidade de prejuízo.</li>
+</ul>
+<p>Depois, simule 5.000 carteiras independentes, cada uma com 80 operações desse mesmo tipo, e estime o valor esperado do lucro total por carteira. Compare esse resultado com <span class="math inline">\(80\)</span> vezes o lucro médio por operação obtido na primeira parte.</p>
+<p><strong>Dica: estrutura sugerida do código</strong></p>
 <ol type="1">
-<li>defina a função em R;</li>
-<li>use <code>set.seed(20260514)</code> antes de gerar os valores pseudoaleatórios;</li>
-<li>gere <code>N = 1000</code> valores uniformes no intervalo correto com <code>runif()</code>;</li>
-<li>calcule a estimativa de Monte Carlo usando <code>(b - a) * mean(f(u))</code>;</li>
-<li>obtenha uma aproximação numérica de referência com <code>integrate()</code>;</li>
-<li>calcule o erro absoluto entre a estimativa de Monte Carlo e o valor retornado por <code>integrate()</code>;</li>
-<li>escreva um comentário curto sobre a proximidade entre a estimativa de Monte Carlo e a aproximação obtida com <code>integrate()</code>.</li>
-</ol>
-<ol type="a">
-<li><p><span class="math inline">\(\int_{1}^{3} x^2\,dx\)</span>.</p></li>
-<li><p><span class="math inline">\(\int_{0}^{\pi} \sin(x)\,dx\)</span>.</p></li>
+<li><p>Use <code>set.seed(20260508)</code>.</p></li>
+<li><p>Crie <code>lucros_possiveis &lt;- c(900, 150, -3500)</code> e o vetor de <code>probabilidades</code>.</p></li>
+<li><p>Na primeira parte, gere 20.000 operações com <code>sample()</code> e calcule <code>mean()</code>, <code>sd()</code> e <code>mean(lucros &lt; 0)</code>.</p></li>
+<li><p>Na segunda, trate cada carteira como a soma de 80 operações simuladas.</p></li>
+<li><p>Uma forma simples é usar <code>replicate(5000, sum(sample(..., size = 80,   replace = TRUE, prob = ...)))</code>.</p></li>
+<li><p>A função <code>replicate()</code> é útil para repetir a mesma expressão várias vezes. Aqui, cada repetição gera uma carteira, e o resultado de cada carteira é a soma de 80 operações simuladas.</p></li>
+<li><p>Como cada repetição devolve um único número, <code>replicate()</code> já retorna um vetor numérico, que depois pode ser usado diretamente em <code>mean()</code> e <code>sd()</code>.</p></li>
 </ol>
 </section>
+<section id="exercício-3" class="level2">
+<h2 class="anchored" data-anchor-id="exercício-3">Exercício 3</h2>
+<p>Em cada mês, a economia pode estar em um de dois estados:</p>
+<ul>
+<li>expansão, com probabilidade <span class="math inline">\(0{,}7\)</span>;</li>
+<li>recessão, com probabilidade <span class="math inline">\(0{,}3\)</span>.</li>
+</ul>
+<p>Se houver expansão, o retorno mensal de uma ação pode ser <span class="math inline">\(9\%\)</span>, <span class="math inline">\(4\%\)</span> ou <span class="math inline">\(-2\%\)</span>, com probabilidades <span class="math inline">\(0{,}25\)</span>, <span class="math inline">\(0{,}50\)</span> e <span class="math inline">\(0{,}25\)</span>. Se houver recessão, o retorno mensal pode ser <span class="math inline">\(3\%\)</span>, <span class="math inline">\(-4\%\)</span> ou <span class="math inline">\(-11\%\)</span>, com probabilidades <span class="math inline">\(0{,}15\)</span>, <span class="math inline">\(0{,}45\)</span> e <span class="math inline">\(0{,}40\)</span>.</p>
+<p>Simule pelo menos 20.000 meses desse processo em duas etapas: primeiro sorteie o estado da economia; depois sorteie o retorno da ação de acordo com o estado sorteado. Estime:</p>
+<ul>
+<li>o valor esperado incondicional do retorno;</li>
+<li>o valor esperado do retorno na expansão;</li>
+<li>o valor esperado do retorno na recessão;</li>
+<li>a probabilidade de retorno negativo.</li>
+</ul>
+<p>Ao final, compare os resultados e interprete a diferença entre analisar o retorno sem condicionamento e analisá-lo por estado da economia.</p>
+<p><strong>Dica: estrutura sugerida do código</strong></p>
+<ol type="1">
+<li><p>Use <code>set.seed(20260509)</code>.</p></li>
+<li><p>Gere primeiro um vetor <code>estado</code> com <code>sample(c(&quot;expansao&quot;, &quot;recessao&quot;), size = 20000, replace = TRUE, prob = c(0.7, 0.3))</code>.</p></li>
+<li><p>Organize esse vetor em um <code>tibble(estado = estado)</code>.</p></li>
+<li><p>Use <code>mutate()</code> para criar a coluna <code>retorno</code> em uma segunda etapa.</p></li>
+<li><p>Dentro de <code>mutate()</code>, você pode usar <code>map_dbl()</code> para que cada valor de <code>estado</code> gere um sorteio com as probabilidades corretas.</p></li>
+<li><p>Com a base pronta, use <code>mean(retorno)</code>, as médias por estado e <code>mean(retorno &lt; 0)</code>.</p></li>
+</ol>
+</section>
+<section id="exercício-4" class="level2">
+<h2 class="anchored" data-anchor-id="exercício-4">Exercício 4</h2>
+<p>Considere dois ativos, <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span>, cujos retornos mensais dependem do mesmo cenário de mercado:</p>
+<ul>
+<li>boom, com probabilidade <span class="math inline">\(0{,}20\)</span>: <span class="math inline">\(R_A = 12\%\)</span> e <span class="math inline">\(R_B = 7\%\)</span>;</li>
+<li>estabilidade, com probabilidade <span class="math inline">\(0{,}50\)</span>: <span class="math inline">\(R_A = 3\%\)</span> e <span class="math inline">\(R_B = 2\%\)</span>;</li>
+<li>crise, com probabilidade <span class="math inline">\(0{,}30\)</span>: <span class="math inline">\(R_A = -9\%\)</span> e <span class="math inline">\(R_B = -4\%\)</span>.</li>
+</ul>
+<p>Simule pelo menos 15.000 meses e estime:</p>
+<ul>
+<li>o valor esperado e o desvio-padrão dos retornos de <span class="math inline">\(A\)</span>;</li>
+<li>o valor esperado e o desvio-padrão dos retornos de <span class="math inline">\(B\)</span>;</li>
+<li>a covariância entre os retornos;</li>
+<li>a correlação entre os retornos;</li>
+<li>a probabilidade de os dois ativos apresentarem retorno negativo no mesmo mês.</li>
+</ul>
+<p>Em seguida, construa uma carteira com <span class="math inline">\(60\%\)</span> investidos em <span class="math inline">\(A\)</span> e <span class="math inline">\(40\%\)</span> em <span class="math inline">\(B\)</span>. Calcule o retorno da carteira em cada mês simulado e estime seu valor esperado e seu desvio-padrão. Interprete se a carteira parece oferecer diversificação em relação aos ativos isolados, com base nos desvios-padrão obtidos.</p>
+<p><strong>Dica: estrutura sugerida do código</strong></p>
+<ol type="1">
+<li><p>Use <code>set.seed(20260510)</code>.</p></li>
+<li><p>Sorteie <code>cenario &lt;- sample(c(&quot;boom&quot;, &quot;estabilidade&quot;, &quot;crise&quot;), size = 15000, replace = TRUE, prob = c(0.20, 0.50, 0.30))</code>.</p></li>
+<li><p>Crie um <code>tibble(cenario = cenario)</code>.</p></li>
+<li><p>Use <code>mutate()</code> com <code>case_when()</code> para construir as colunas <code>RA</code> e <code>RB</code> a partir do cenário sorteado.</p></li>
+<li><p>Ainda em <code>mutate()</code>, crie <code>RP = 0.6 * RA + 0.4 * RB</code>.</p></li>
+<li><p>Com as colunas prontas, use <code>mean()</code>, <code>sd()</code>, <code>cov()</code>, <code>cor()</code> e <code>mean(RA &lt; 0 &amp; RB &lt; 0)</code>.</p></li>
+</ol>
+</section>
+<section id="exercício-5" class="level2">
+<h2 class="anchored" data-anchor-id="exercício-5">Exercício 5</h2>
+<p>Em cada mês, uma financeira pode operar em um de três cenários:</p>
+<ul>
+<li>aquecido, com probabilidade <span class="math inline">\(0{,}25\)</span>: 120 contratos e probabilidade de inadimplência igual a <span class="math inline">\(0{,}03\)</span>;</li>
+<li>normal, com probabilidade <span class="math inline">\(0{,}50\)</span>: 90 contratos e probabilidade de inadimplência igual a <span class="math inline">\(0{,}06\)</span>;</li>
+<li>fraco, com probabilidade <span class="math inline">\(0{,}25\)</span>: 60 contratos e probabilidade de inadimplência igual a <span class="math inline">\(0{,}10\)</span>.</li>
+</ul>
+<p>Cada contrato adimplente gera lucro de R$ 300, e cada contrato inadimplente gera prejuízo de R$ 2.500.</p>
+<p>Simule pelo menos 10.000 meses da operação. Em cada mês:</p>
+<ol type="1">
+<li>sorteie o cenário;</li>
+<li>determine o número de contratos correspondente ao cenário;</li>
+<li>simule o resultado de cada contrato como adimplente ou inadimplente;</li>
+<li>calcule o lucro mensal total.</li>
+</ol>
+<p>Com base nas simulações, estime:</p>
+<ul>
+<li>o valor esperado do lucro mensal;</li>
+<li>o desvio-padrão do lucro mensal;</li>
+<li>o valor esperado do lucro em cada cenário;</li>
+<li>a covariância entre o número de inadimplentes e o lucro mensal;</li>
+<li>a correlação entre o número de inadimplentes e o lucro mensal;</li>
+<li>a probabilidade de lucro mensal negativo.</li>
+</ul>
+<p>Interprete o sinal da covariância e da correlação obtidas.</p>
+<p><strong>Dica: estrutura sugerida do código</strong></p>
+<ol type="1">
+<li><p>Use <code>set.seed(20260511)</code>.</p></li>
+<li><p>Crie uma função <code>simular_mes()</code>.</p></li>
+<li><p>Dentro da função, sorteie o cenário, defina <code>n_contratos</code> e <code>p_inadimplencia</code>, simule os contratos do mês e conte os inadimplentes.</p></li>
+<li><p>Calcule o lucro mensal com base no número de contratos adimplentes e inadimplentes.</p></li>
+<li><p>Faça a função devolver pelo menos <code>cenario</code>, <code>n_inadimplentes</code> e <code>lucro</code>.</p></li>
+<li><p>Antes de repetir 10.000 vezes, teste a função uma única vez com <code>simular_mes()</code> para verificar se ela está devolvendo o que você espera.</p></li>
+<li><p>Depois use:</p></li>
+</ol>
+<p><code>replicate(10000, simular_mes(), simplify = FALSE)</code></p>
+<ol start="8" type="1">
+<li><p>Aqui a lógica é a mesma do Exercício 2: <code>replicate()</code> repete a mesma expressão várias vezes. A diferença é que agora cada repetição devolve uma pequena base, e não um único número.</p></li>
+<li><p>Por isso usamos <code>simplify = FALSE</code>: assim, o resultado fica como uma lista com 10.000 elementos.</p></li>
+<li><p>Em seguida, use <code>bind_rows()</code> para juntar essa lista em uma única base de dados, com uma linha para cada mês simulado.</p></li>
+<li><p>Com a base final pronta, calcule as estatísticas pedidas.</p></li>
+</ol>
 </section>
 
 </main>

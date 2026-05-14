@@ -258,13 +258,24 @@ navegador padrão.
   - [Slides Aula 8](slides/08-aula-slides.html){target="_blank"}
 
 
+
+
 # Aula 9 (07/05/26)
 
 - **Slides:**
 
   - [Slides Aula 9](slides/09-aula-slides.html){target="_blank"}
-  - [Lista de Exercícios](listas-exercicios/06-lista.html){target="_blank"}
-  
+  - [Lista de Exercícios 5](listas-exercicios/05-lista.html){target="_blank"}
+
+
+
+
+# Aula 10 (14/05/26)
+
+- **Slides:**
+
+  - [Slides Aula 10](slides/10-aula-slides.html){target="_blank"}
+  - [Lista de Exercícios 5](listas-exercicios/06-lista.html){target="_blank"}  
   
 
   
