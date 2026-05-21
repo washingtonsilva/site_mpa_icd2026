@@ -276,6 +276,14 @@ navegador padrão.
 
   - [Slides Aula 10](slides/10-aula-slides.html){target="_blank"}
   - [Lista de Exercícios 5](listas-exercicios/06-lista.html){target="_blank"}  
-  
 
+
+
+
+# Aula 11 (14/05/26)
+
+- **Slides:**
+
+  - [Slides Aula 11](slides/11-aula-slides.html){target="_blank"}  
+  - [retornos_xts.rds](dados/retornos_xts.rds){target="_blank"}
   
