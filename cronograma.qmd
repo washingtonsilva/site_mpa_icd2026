@@ -280,10 +280,19 @@ navegador padrão.
 
 
 
-# Aula 11 (14/05/26)
+# Aula 11 (21/05/26)
 
 - **Slides:**
 
   - [Slides Aula 11](slides/11-aula-slides.html){target="_blank"}  
-  - [retornos_xts.rds](dados/retornos_xts.rds){target="_blank"}
   
+
+
+
+
+# Aula 12 (28/05/26)
+
+- **Slides:**
+
+  - [Slides Aula 12 - *em construção*] 
+  - [retornos_xts.rds](dados/retornos_xts.rds){target="_blank"}  
