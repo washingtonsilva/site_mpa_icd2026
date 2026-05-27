@@ -275,7 +275,7 @@ navegador padrão.
 - **Slides:**
 
   - [Slides Aula 10](slides/10-aula-slides.html){target="_blank"}
-  - [Lista de Exercícios 5](listas-exercicios/06-lista.html){target="_blank"}  
+  - [Lista de Exercícios 6](listas-exercicios/06-lista.html){target="_blank"}  
 
 
 
