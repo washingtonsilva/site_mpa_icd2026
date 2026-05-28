@@ -286,7 +286,8 @@ aba do seu navegador padrão.
 
 - **Slides:**
 
-  - [Slides Aula 11](slides/11-aula-slides.html){target="_blank"}  
+  - [Slides Aula 11](slides/11-aula-slides.html){target="_blank"}
+  - [Resolução dos Exercícios 1 e 2](listas-exercicios/11-aula-exercicios-solucoes.html){target="_blank"}
   
 
 
