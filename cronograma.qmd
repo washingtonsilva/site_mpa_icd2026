@@ -22,8 +22,8 @@ Ao abrir um arquivo de slides, utilize:
 - Tecla **`Esc`** para sair do modo de visão geral  
 - Em dispositivos móveis, utilize o gesto de deslizar para os lados  
 
-Os slides são disponibilizados em **HTML autocontido** e abrem em nova aba do seu 
-navegador padrão.  
+Os slides são disponibilizados em **HTML autocontido** e abrem em nova 
+aba do seu navegador padrão.  
 :::
 
 
@@ -266,6 +266,7 @@ navegador padrão.
 
   - [Slides Aula 9](slides/09-aula-slides.html){target="_blank"}
   - [Lista de Exercícios 5](listas-exercicios/05-lista.html){target="_blank"}
+  - [Resolução da Lista 5](listas-exercicios/05-lista-solucoes.html){target="_blank"}
 
 
 
@@ -275,7 +276,8 @@ navegador padrão.
 - **Slides:**
 
   - [Slides Aula 10](slides/10-aula-slides.html){target="_blank"}
-  - [Lista de Exercícios 6](listas-exercicios/06-lista.html){target="_blank"}  
+  - [Lista de Exercícios 6](listas-exercicios/06-lista.html){target="_blank"}
+  - [Resolução da Lista 6](listas-exercicios/06-lista-solucoes.html){target="_blank"}
 
 
 
