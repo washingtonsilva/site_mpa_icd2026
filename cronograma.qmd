@@ -297,5 +297,6 @@ aba do seu navegador padrão.
 
 - **Slides:**
 
-  - [Slides Aula 12 - *em construção*] 
+  - [Slides Aula 12](slides/12-aula-slides.html){target="_blank"} 
+  - [Introdução ao pacote `tidyquant`](slides/tidyquant-intro.html){target="_blank"} 
   - [retornos_xts.rds](dados/retornos_xts.rds){target="_blank"}  
