@@ -311,9 +311,9 @@ conforme o andamento da disciplina e o rendimento da turma.
 | 9    | 7/5/26   | Probabilidade e Simulação                           | 
 |10    | 14/5/26  | Probabilidade e Simulação                           |
 |11    | 21/5/26  | Probabilidade e Simulação                           |
-|12    | 28/5/26  | Avaliação 2                                         |
-|13    | 11/6/26  | Inferência Estatística                              |
+|12    | 28/5/26  | Probabilidade e Simulação                           |
+|13    | 11/6/26  | Avaliação 2                                         |
 |14    | 18/6/26  | Inferência Estatística                              |
-|15    | 25/6/26  | Avaliação 3 / *Encerramento*                        |
+|15    | 25/6/26  | Avaliação 3/Inferência Estatística.                 |
 
 

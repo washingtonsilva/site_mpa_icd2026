@@ -301,3 +301,13 @@ aba do seu navegador padrão.
   - [Introdução ao pacote `tidyquant`](slides/tidyquant-intro.html){target="_blank"} 
   - [retornos_xts.rds](dados/retornos_xts.rds){target="_blank"}  
   - [Resolução dos Exercícios 1 e 2](listas-exercicios/12-aula-exercicios-solucoes.html){target="_blank"}
+  
+
+
+
+
+# Aula 13 (11/06/26)
+
+- **Avaliação 2**
+
+  - [Clique aqui para acessar a Avaliação 2]
