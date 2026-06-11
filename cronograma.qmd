@@ -310,4 +310,4 @@ aba do seu navegador padrão.
 
 - **Avaliação 2**
 
-  - [Clique aqui para acessar a Avaliação 2]
+  - [Clique aqui para acessar a Avaliação 2](avaliacoes/02-avaliacao.html){target="_blank"}
