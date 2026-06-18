@@ -311,3 +311,13 @@ aba do seu navegador padrão.
 - **Avaliação 2**
 
   - [Clique aqui para acessar a Avaliação 2](avaliacoes/02-avaliacao.html){target="_blank"}
+
+
+
+
+
+# Aula 14 (18/06/26)
+
+- **Slides:**
+
+  - [Slides Aula 14](slides/14-aula-slides.html){target="_blank"}
