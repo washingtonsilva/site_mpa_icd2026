@@ -226,6 +226,10 @@ aba do seu navegador padrão.
     - [agencias.csv](dados/01-avaliacao/agencias.csv){target="_blank"}
     - [credito_trimestral.csv](dados/01-avaliacao/credito_trimestral.csv){target="_blank"}
     - [inadimplencia.csv](dados/01-avaliacao/inadimplencia.csv){target="_blank"}
+    
+- **Resolução da Avaliação 1**
+
+  - [Resolução da Avaliação 1](avaliacoes/01-avaliacao-gabarito.html){target="_blank"}
   
 
 
@@ -311,6 +315,10 @@ aba do seu navegador padrão.
 - **Avaliação 2**
 
   - [Clique aqui para acessar a Avaliação 2](avaliacoes/02-avaliacao.html){target="_blank"}
+  
+- **Resolução da Avaliação 2**
+
+  - [Resolução da Avaliação 2](avaliacoes/02-avaliacao-gabarito.html){target="_blank"}
 
 
 
@@ -321,3 +329,18 @@ aba do seu navegador padrão.
 - **Slides:**
 
   - [Slides Aula 14](slides/14-aula-slides.html){target="_blank"}
+  
+
+
+
+
+# Aula 15 (25/06/26)
+
+- **Artigo para Avaliação 3:**
+
+  - [IMBENS, Guido W. Statistical Significance, p-Values, and the Reporting of Uncertainty. Journal of Economic Perspectives, v. 35, n. 3, p. 157–174, 2021.](artigos/imbens-2021-statistical-significance-p-values-and-the-reporting-of-uncertainty.pdf){target="_blank"}
+
+  
+- **Avaliação 3**
+
+  - [Será realizada em 25/06/2026]
