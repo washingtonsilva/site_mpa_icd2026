@@ -336,11 +336,26 @@ aba do seu navegador padrão.
 
 # Aula 15 (25/06/26)
 
+
+- **Avaliação 3**
+
+  - [Clique aqui para acessar a Avaliação 3](avaliacoes/03-avaliacao.html){target="_blank"}
+  - [Orientações para a Avaliação 3](avaliacoes/03-avaliacao-orientacoes.html){target="_blank"}
+  - [Informações sobre os dados da Questão 1](avaliacoes/informacao-dados-avaliacao-3.html){target="_blank"}
+  
+
+- **Dados para a Questão 1**
+  
+    - [instituicoes_financeiras.csv](dados/03-avaliacao/instituicoes_financeiras.csv){target="_blank"}
+    - [indicadores_contabeis.csv](dados/03-avaliacao/indicadores_contabeis.csv){target="_blank"}
+    - [carteira_credito.csv](dados/03-avaliacao/carteira_credito.csv){target="_blank"}
+
+  
+- **Template Quarto para resolução da Avaliação 3**
+
+  - [03-avaliacao-template.zip](avaliacoes/03-avaliacao-template.zip)
+  
+
 - **Artigo para Avaliação 3:**
 
   - [IMBENS, Guido W. Statistical Significance, p-Values, and the Reporting of Uncertainty. Journal of Economic Perspectives, v. 35, n. 3, p. 157–174, 2021.](artigos/imbens-2021-statistical-significance-p-values-and-the-reporting-of-uncertainty.pdf){target="_blank"}
-
-  
-- **Avaliação 3**
-
-  - [Será realizada em 25/06/2026]
